@@ -77,9 +77,6 @@
 </style>
 <a class='social' href="http://uk.linkedin.com/in/davidburn1"><img class="img-social" src="/images/social/linkedin.png" height="38" alt="David Burn LinkedIn profile"></a>
 <a class='social' href="https://orcid.org/0000-0001-7540-1616"><img class="img-social" src="/images/social/orcid.png" height="38" alt="David Burn Orcid profile"></a>
-<a class='social' href="https://www.researchgate.net/profile/David_Burn/"><img class="img-social" src="/images/social/researchGate.png"  height="38" alt="David Burn Research Gate profile"></a>
-<a class='social' href="http://diamond.academia.edu/davidburn/"><img class="img-social" src="/images/social/academia.png"  height="38" alt="David Burn Academia.edu profile"></a>
-<a class='social' href="http://www.mendeley.com/profiles/david-burn/"><img class="img-social" src="/images/social/mendeley.png"  height="38" alt="David Burn Mendeley profile"></a>
 <a class='social' href="http://www.researcherid.com/rid/J-3598-2012"><img class="img-social" src="/images/social/researcherID.png"  height="38" alt="David Burn Researcher ID profile"></a>
 <a class='social' href="http://scholar.google.co.uk/citations?user=fsWltggAAAAJ "><img class="img-social" src="/images/social/googleScholar.png" height="38" alt="David Burn Google Scholar profile"></a> 
 
@@ -210,7 +207,7 @@
 
 <section>
 	<div class="container">
-		<h1 class="text-center"> The focus of my research </h1>
+		<h1 class="text-center"> Research Themes </h1>
 		<div class="row themes">
 				<div class="col-lg-4">
 					<h2 class="text-center"> Nanoscale magnetism </h2>
@@ -245,21 +242,22 @@
 		<h2> Recent publications  </h2>
 	
 		<div class="row">
-			<div class="col-md-6" ng-repeat="p in papers|limitTo:4">
+			<div class="col-lg-6" ng-repeat="p in papers|limitTo:4">
 				<div class='row'>
-					<div class="col-sm-3">
-						<img class="hidden-xs img-fluid"  ng-src="/images/papers/{{p.key}}.jpg">
+					<div class="col-sm-4">
+						<img class="hidden-xs img-fluid img-thumbnail" ng-src="/images/papers/{{p.key}}.jpg">
 					</div>
-					<div class="col-sm-9">
+					<div class="col-sm-8">
 						<p> <b> <a href="/publications/{{p.key}}">  {{p.title}} </a> </b></p>
-						<p> {{p.authors}} </p>
-						<p> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </p>
+						<p ng-bind-html="p.authors | formatAuthors"></p> 
+						<p> <a href="https://doi.org/{{p.doi}}"> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </a></p>
 					</div>
 				</div>	
 			</div>
 		</div>
-	
-		<button class="btn btn-primary" ui-sref="/publications"> See all publications </button>
+		<div class="row">
+			<button class="btn btn-primary" ui-sref="/publications"> See all publications </button>
+		</div>
 	</div>
 </section>
 
@@ -348,46 +346,6 @@
 <hr>
 <br>
 
-<section class="bg1">
-	<div class="container">
-		<div class="row  justify-content-md-center align-items-center">
-			<div class="col-sm-6">
-				<br>
-				David Burn <br>
-				Diamond Light Source <br>
-				Didcot <br>
-				Oxfordshire <br>
-				OX11 0DE <br>
-				<br>
-				david.burn@diamond.ac.uk
-				<br><br>
-			</div>
-			<div class="col-sm-6">
-	<style>
-.img-social {
-	padding:1px;
-}
-</style>
-<a class='social' href="http://uk.linkedin.com/in/davidburn1"><img class="img-social" src="/images/social/linkedin.png" height="38" alt="David Burn LinkedIn profile"></a>
-
-<a class='social' href="https://orcid.org/0000-0001-7540-1616"><img class="img-social" src="/images/social/orcid.png" height="38" alt="David Burn Orcid profile"></a>
-
-<a class='social' href="https://www.researchgate.net/profile/David_Burn/"><img class="img-social" src="/images/social/researchGate.png"  height="38" alt="David Burn Research Gate profile"></a>
-
-<a class='social' href="http://diamond.academia.edu/davidburn/"><img class="img-social" src="/images/social/academia.png"  height="38" alt="David Burn Academia.edu profile"></a>
-
-<a class='social' href="http://www.mendeley.com/profiles/david-burn/"><img class="img-social" src="/images/social/mendeley.png"  height="38" alt="David Burn Mendeley profile"></a>
-
-<a class='social' href="http://www.researcherid.com/rid/J-3598-2012"><img class="img-social" src="/images/social/researcherID.png"  height="38" alt="David Burn Researcher ID profile"></a>
-
-<a class='social' href="http://scholar.google.co.uk/citations?user=fsWltggAAAAJ "><img class="img-social" src="/images/social/googleScholar.png" height="38" alt="David Burn Google Scholar profile"></a> 
-
-
-
-			</div>
-		</div>
-	</div>
-</section>
 
 
 

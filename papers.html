@@ -8,19 +8,6 @@
 
 
     <section class="container">
-    <!-- <table class="table table-striped" >
-        <tr ng-repeat="p in papers"> 
-            <td> {{p.title}} </td>
-            <td> {{p.authors}} </td>
-            <td> <it>{{p.journal}}</it> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </td>
-            <td> DOI:{{p.doi}} </td>
-
-        </tr>
-    </table> -->
-
-
-
-
 
         <div class="row" ng-repeat="p in papers">
             <div class="col-sm-3" > 
@@ -30,14 +17,18 @@
             <div class="col-sm-9 d-flex flex-column justify-content-between">
                 <div> 
                     <h3><a href="/publications/{{p.key}}" mathjax-bind="p.title">  </a></h3>
-
-                    <p> {{p.authors}} &ensp; </p>
+    
+                    <p ng-bind-html="p.authors | formatAuthors"></p> 
                     <p> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </p>
                     <p> DOI: <a href="https://doi.org/{{p.doi}}"> {{p.doi}} </a> </p>
                 </div>
                 <!-- <div>
                     <button class="btn btn-default pull-right rm">Read more..</button>			
                 </div>		 -->
+            </div>
+
+            <div class="col-sm-12" > 
+                <hr>  
             </div>
             
         </div>

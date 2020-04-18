@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router', 'ngSanitize']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -28,8 +28,23 @@ app.controller('papersController', function($scope, $http) {
         $scope.papers = response.data;
     });
 
+    $scope.formatAuthors = function(authors){
+        console.log("fa");
+        console.log(authors);
+        
+    }
+
 
 });
+
+
+
+app.filter('formatAuthors', function() {
+    return function(authors) {
+        return authors.replace("D.M. Burn", "<b>D.M. Burn</b>");
+    };
+  });
+
 
 
 
