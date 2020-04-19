@@ -1,20 +1,20 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 <meta charset="UTF-8">
 
-<title>David Burn - Nanomagnetism research</title>
+<title>{{pageTitle}}</title>
 <meta name="robots" content="index, follow"/>
 <meta name="keywords" content=""/>
 <meta name="author" content="David Burn"/>
 <meta name="description" content="David Burn - Research scientist working on nanoscale magnetic devices. Interested in dynamic magnetisation processes, spintronic and electronic behaviour and nanotechnology device fabrication."/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<meta property='og:title' content="David Burn - Publications"/>
-<meta property='og:image' content="https://davidburn1.github.io/images/li_publications.jpg"/>
-<meta property='og:description' content="Publications in peer-reviewed international journals"/>
-<meta property='og:url' content="https://davidburn1.github.io/#!/publications" />
+<meta property='og:title' content="{{og.title}}"/>
+<meta property='og:image' content="{{og.image}}"/>
+<meta property='og:description' content="{{og.description}}"/>
+<meta property='og:url' content="{{og.url}}" />
 
 
 
@@ -107,7 +107,6 @@
 
 
 
-<div ng-app="app">
 
 	<nav class="navbar navbar-toggleable-sm navbar-light bg-faded static-top">
 		<button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar">
@@ -123,6 +122,8 @@
 		</ul>
 	  </div>
 	</nav>
+
+	{{pageTitle}}
 
 	<ui-view></ui-view>
 	
@@ -152,7 +153,7 @@
 	</section>
 
 
-</div>
+
 
 </body>
 </html>
