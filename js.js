@@ -4,7 +4,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state("/publications", {
         url: "/publications",
-        name: "publications",
+        templateUrl: "papers.html",
+    });
+
+    $stateProvider.state("/publications/{key}", {
+        url: "/publications/{key}",
         templateUrl: "papers.html",
     });
 

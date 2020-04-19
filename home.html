@@ -42,15 +42,17 @@
 
 <body>
 
-<div id="fb-root"></div>
-
 
 
 
 <style>
-.jumbotron {
-	padding-bottom: 0px;
-}
+	.jumbotron {
+		padding-bottom: 0px;
+		font-size: 150%;
+	}
+	.jumbotron h1 {
+		font-size: 300%;
+	}
 </style>
 
 <section>
@@ -61,32 +63,18 @@
 			</div>
 			
 			<div class="col-md-6">	
-				<h1 class="text-center"> David Burn </h1>	
-				<br/>		
-				<p class="text-center">  Research scientist working in advanced magnetic materials, magnetisation dynamics, spintronics.</p>
-								
-				<p class="text-center">My research is of fundamental scientific interest and has huge potential for the development of future technological devices.</p>
+				<h1 class="text-center"> David Burn </h1>	</br>
+				<p class="text-center">  Research scientist working in advanced magnetic materials, magnetisation dynamics, spintronics.</p>		
+				<p class="text-center"> My research is of fundamental scientific interest and has huge potential for the development of future technological devices.</p>
 				<br/>
 					
 				<div class="row justify-content-md-center">
-						
-<style>
-.img-social {
-	padding:1px;
-}
-</style>
-<a class='social' href="http://uk.linkedin.com/in/davidburn1"><img class="img-social" src="/images/social/linkedin.png" height="38" alt="David Burn LinkedIn profile"></a>
-<a class='social' href="https://orcid.org/0000-0001-7540-1616"><img class="img-social" src="/images/social/orcid.png" height="38" alt="David Burn Orcid profile"></a>
-<a class='social' href="http://www.researcherid.com/rid/J-3598-2012"><img class="img-social" src="/images/social/researcherID.png"  height="38" alt="David Burn Researcher ID profile"></a>
-<a class='social' href="http://scholar.google.co.uk/citations?user=fsWltggAAAAJ "><img class="img-social" src="/images/social/googleScholar.png" height="38" alt="David Burn Google Scholar profile"></a> 
-
-
-
-						<br><br>
+					<a class='social' href="http://uk.linkedin.com/in/davidburn1"><img class="img-social" src="/images/social/linkedin.png" height="38" alt="David Burn LinkedIn profile"></a>
+					<a class='social' href="https://orcid.org/0000-0001-7540-1616"><img class="img-social" src="/images/social/orcid.png" height="38" alt="David Burn Orcid profile"></a>
+					<a class='social' href="http://www.researcherid.com/rid/J-3598-2012"><img class="img-social" src="/images/social/researcherID.png"  height="38" alt="David Burn Researcher ID profile"></a>
+					<a class='social' href="http://scholar.google.co.uk/citations?user=fsWltggAAAAJ "><img class="img-social" src="/images/social/googleScholar.png" height="38" alt="David Burn Google Scholar profile"></a> 
 				</div>
-
 			</div>
-		
 	</div>
 </section>
 
@@ -248,7 +236,7 @@
 						<img class="hidden-xs img-fluid img-thumbnail" ng-src="/images/papers/{{p.key}}.jpg">
 					</div>
 					<div class="col-sm-8">
-						<p> <b> <a href="/publications/{{p.key}}">  {{p.title}} </a> </b></p>
+						<p> <b> <a href="#!/publications/{{p.key}}">  {{p.title}} </a> </b></p>
 						<p ng-bind-html="p.authors | formatAuthors"></p> 
 						<p> <a href="https://doi.org/{{p.doi}}"> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </a></p>
 					</div>
@@ -256,7 +244,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<button class="btn btn-primary" ui-sref="/publications"> See all publications </button>
+			<div class="col-12">
+				<button class="btn btn-primary float-right" ui-sref="/publications"> See all publications </button>
+			</div>
 		</div>
 	</div>
 </section>
@@ -282,11 +272,11 @@
 		
 		
 	<div class="row justify-content-center">
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<img class="rounded img-fluid" src="/images/tl_diamond.jpg" alt="">
 		</div>
 		<div class="col-md-6 col-lg-5">
-			<h2> <a href="http://www.diamond.ac.uk"> Diamond Light Source </a></h2>
+			<h2>  Diamond Light Source </h2>
 			<p> I am currently doing research on magnetisation dynamics, devleoping time-resolved energy specific techniques to probe the magnetisation in magnetic thin films and nanostructures.</p>
 		</div>
 		<div class="col-md-3"></div>
@@ -294,11 +284,11 @@
 	
 	<div class="row justify-content-center">
 		<div class="col-md-3"></div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<img class="rounded img-fluid" src="/images/tl_queens_tower.jpg" alt="">
 		</div>
 		<div class="col-md-6 col-lg-5">
-			<h2>  <a href="http://www.imperial.ac.uk"> Imperial College London </a></h2>
+			<h2> Imperial College London </h2>
 			<p>At Imperial College London I worked in the functional magnetism group exploring the magnetic and electronic properties of interconnected magnetic nanostructures in artificial spin ice geometries.</p>
 		</div>
 		
@@ -307,11 +297,11 @@
 
 		
 	<div class="row justify-content-center">
-		<div class="col-md-3 ">
+		<div class="col-md-2">
 			<img class="rounded img-fluid" src="/images/tl_cathedral.jpg" alt="">
 		</div>
 		<div class="col-md-6 col-lg-5">
-			<h2>  <a href="http://www.durham.ac.uk">Durham University </a></h2>
+			<h2> Durham University </h2>
 				<p>Previously I did my PhD at Durham University on the interactions between nanowire structuring and the micromagnetic structure of domain walls. I've looked in detail at the difference between micromagnetic domain walls structures in their static and dynamic regimes.</p>
 		</div>
 		<div class="col-md-3"></div>
@@ -320,11 +310,11 @@
 		
 	<div class="row justify-content-center">
 		<div class="col-md-3"></div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<img class="rounded img-fluid" src="/images/tl_bridge.jpg" alt="">
 		</div>
 		<div class="col-md-6 col-lg-5">
-					<h2>  <a href="http://www.durham.ac.uk">Durham University </a></h2>
+					<h2> Durham University </h2>
 					<p>I was also at Durham University as an undergraduate studying Physics. My final year masters project was investigating magnetisation dynamics in thin-film structures.</p>
 		</div>
 		
