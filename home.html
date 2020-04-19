@@ -196,8 +196,91 @@
 
 
 
+<!-- <section>
+    <style>
+        flickity{
+        display:block;
+        position:relative;
+        }
+        flickity-slide{
+            width:270px;
+            height:360px;
+        margin-right:10px;
+        display:flex;
+        justify-content:center;
+        }
+        flickity-slide img {
+            width:250px;
+        }
+    </style>
+
+    <div class="container" ng-controller="presentationsController">
+        <h1 class="text-center"> Look out for my work </h1>
+        <p class="lead"> Presented frequently at magnetism conferences, both in the UK and internationally. </p>
+        <br>
+
+        <flickity options='{"pageDots":false,"selectedAttraction":0.01,"friction":0.15, "freeScroll":true}'>
+            <flickity-slide ng-repeat="p in presentations">
+                <img class="img-rounded img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
+            </flickity-slide>
+        </flickity>
+    </div>
+    <br>
+</section> -->
 
 
+<section>
+    <style>
+        flickity{
+        display:block;
+        position:relative;
+        }
+        flickity-slide{
+            width:80%;
+            height:400px;
+        margin-right:10px;
+        display:flex;
+        justify-content:center;
+        }
+        flickity-slide img {
+            width:100%;
+        }
+    </style>
+
+    <div class="container" ng-controller="presentationsController">
+
+		<br>
+		<div class="row">
+			<div class="col-lg-6 text-center">
+				<h1> Look out for my work </h1>
+				<p class="lead"> Presented frequently at magnetism conferences, both in the UK and internationally. </p>
+				<button class="btn btn-outline-primary" ui-sref="/presentations"> More of my presentations </button>
+			</div>
+			<div class="col-lg-6">
+				<flickity options='{"pageDots":false,"selectedAttraction":0.01,"friction":0.15}'>
+					<flickity-slide ng-repeat="p in presentations">
+						<img class="img-rounded img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
+					</flickity-slide>
+				</flickity>
+			</div>
+
+		</div>
+
+
+
+        <!-- <div class="row justify-content-md-center">
+            <button id="btn_view_pres" type="button" class="btn btn-primary">Find out more</button>
+        </div> -->
+    </div>
+    <br>
+</section>
+
+
+
+
+
+
+<br/><hr/><br/>
 
 
 
