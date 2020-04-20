@@ -51,8 +51,10 @@ app.run(['$rootScope', '$transitions', '$location', '$window', function ($rootSc
     $rootScope.pageTitle = "David Burn - magnetism";
 
     $transitions.onSuccess({}, function(){
-        //$window.gatag('send', 'pageview', $location.path());
-        $window.ga('send', 'pageview', { page: $location.path() });
+        //$window.gatag('send', 'pageview', { page: $location.path() });
+        //$window.ga('send', 'pageview', { page: $location.path() });
+        $window.gtag('config', 'UA-163960416-1', {'page_path': $location.path()});
+        //$window.gtag('config', 'UA-163960416-1');
     });
  }]);
 
