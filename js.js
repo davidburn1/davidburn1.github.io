@@ -29,17 +29,31 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider.state("/publications/{key}", {
         url: "/publications/{key}",
         templateUrl: "papers.html",
+        // resolve: {
+        //     thekey: function($transition$) {
+        //         //console.log($transition$.params().key);
+        //         return $transition$.params().key;
+        //     }
+        //   }
     });
 
-
+    $stateProvider.state("/presentations/{key}", {
+        url: "/presentations/{key}",
+        templateUrl: "presentations.html",
+    });
 
     $urlRouterProvider.otherwise('/');
 });
 
 
 
-app.run(['$rootScope', function ($rootScope) {
+app.run(['$rootScope', '$transitions', '$location', '$window', function ($rootScope, $transitions, $location, $window) {
     $rootScope.pageTitle = "David Burn - magnetism";
+
+    $transitions.onSuccess({}, function(){
+        //$window.gatag('send', 'pageview', $location.path());
+        $window.ga('send', 'pageview', { page: $location.path() });
+    });
  }]);
 
 
