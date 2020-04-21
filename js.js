@@ -7,39 +7,47 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "home.html",
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Magnetism";
+            $rootScope.selectedKey =  "";
         },
     });
 
-    $stateProvider.state("/publications", {
+    $stateProvider.state("publications", {
         url: "/publications",
+        templateUrl: "papers.html",
+        onEnter: function($rootScope){
+            $rootScope.pageTitle = "David Burn - Publications";
+            $rootScope.selectedKey =  "";
+            $("html,body").animate({ scrollTop: 0}, 10);
+            //$("body").scrollTop = 0;
+        },
+    });
+
+    $stateProvider.state("publications/{key}", {
+        url: "/publications/{key}",
         templateUrl: "papers.html",
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Publications";
         },
     });
 
-    $stateProvider.state("/presentations", {
+    $stateProvider.state("presentations", {
         url: "/presentations",
         templateUrl: "presentations.html",
+        controller: 'presentationsController',
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Presentations";
+            $rootScope.selectedKey =  "";
+            $("html,body").animate({ scrollTop: 0}, 10);
+            //$("body").scrollTop = 0;
         },
     });
 
-    $stateProvider.state("/publications/{key}", {
-        url: "/publications/{key}",
-        templateUrl: "papers.html",
-        // resolve: {
-        //     thekey: function($transition$) {
-        //         //console.log($transition$.params().key);
-        //         return $transition$.params().key;
-        //     }
-        //   }
-    });
-
-    $stateProvider.state("/presentations/{key}", {
-        url: "/presentations/{key}",
-        templateUrl: "presentations.html",
+    $stateProvider.state("presentations.key", {
+        url: "/{key}",
+        onEnter: function ($rootScope, $stateParams) {
+            $rootScope.pageTitle = "David Burn - Presentations - " + $stateParams.key;
+            $rootScope.selectedKey = $stateParams.key;
+        },
     });
 
     $urlRouterProvider.otherwise('/');
@@ -47,54 +55,60 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 
 
-app.run(['$rootScope', '$transitions', '$location', '$window', function ($rootScope, $transitions, $location, $window) {
-    $rootScope.pageTitle = "David Burn - magnetism";
+app.run(['$rootScope', '$transitions', '$location', '$window', '$http', function ($rootScope, $transitions, $location, $window, $http) {
+    $rootScope.pageTitle = "David Burn - Magnetism";
 
     $transitions.onSuccess({}, function(){
-        //$window.gatag('send', 'pageview', { page: $location.path() });
-        //$window.ga('send', 'pageview', { page: $location.path() });
         $window.gtag('config', 'UA-163960416-1', {'page_path': $location.path()});
-        //$window.gtag('config', 'UA-163960416-1');
     });
- }]);
 
-
-
-app.controller('papersController', function($scope, $http, $rootScope) {
-    $scope.papers = [];
+    $rootScope.selectedKey = "";
 
     $http.get("papers.json")
     .then(function(response) {
-        $scope.papers = response.data;
+        $rootScope.papers= response.data;
     });
-});
-
-app.controller('presentationsController', function($scope, $http, $rootScope) {
-    $scope.presentations = [];
 
     $http.get("presentations.json")
     .then(function(response) {
-        $scope.presentations = response.data;               
+        $rootScope.presentations= response.data;
     });
 
-    $scope.selected = {};
-    $scope.getAbstract = function(key){
-        $scope.selected = {};
-        for (var i=0; i<$scope.presentations.length; i++) {
-            if ($scope.presentations[i].key == key){
-                $scope.selected = $scope.presentations[i];
-            }
-        }
-        $scope.selected.abstract = "";
+ }]);
 
-        $http.get("abstracts/presentations/"+key+".html")
+
+// app.service('papers', function($rootScope, $http){
+//     var papers = {};
+//     papers.data = [];
+
+//     $http.get("papers.json")
+//     .then(function(response) {
+//         papers.data = response.data;
+//     });
+  
+//     return papers;
+// });
+
+app.controller('papersController', function($scope, $http) {
+
+});
+
+app.controller('presentationsController', function($rootScope, $scope, $http) {
+
+    $scope.$watch("selectedKey", function() {
+        if ($rootScope.selectedKey == "") {return;}
+        $http.get("abstracts/presentations/"+$rootScope.selectedKey+".html")
         .then(function(response) {
-            $scope.selectedAbstract = response.data;             
+            for (var i=0; i<$rootScope.presentations.length; i++) {
+                if ($rootScope.presentations[i].key == $rootScope.selectedKey){
+                    $rootScope.presentations[i].abstract = response.data; 
+                }
+            }
         },
         function(data) {
-            $scope.selectedAbstract = "no abstract";
         });
-    }
+    });
+
 });
 
 app.filter('formatAuthors', function() {
@@ -107,7 +121,7 @@ app.filter('formatAuthors', function() {
 
 
 
-app.directive("mathjaxBind", function() {
+  app.directive("mathjaxBind", function() {
     return {
         restrict: "A",
         controller: ["$scope", "$element", "$attrs",
@@ -117,6 +131,21 @@ app.directive("mathjaxBind", function() {
                     MathJax.Hub.Queue(["Typeset", MathJax.Hub, $element[0]]);
                 });
             }]
+    };
+});
+
+app.directive("scrollTo", function() {
+    return {
+        controller: ["$scope", "$element", "$attrs", "$timeout", function($scope, $element, $attrs, $timeout) {
+            $scope.$watch($attrs.scrollTo, function(value) {
+                if (value) { 
+                    console.log("directive watch"); 
+                    $timeout( function(){ // allow some time for previous abstract div to hide
+                        $("html,body").animate({ scrollTop: $('#'+$scope.selectedKey).offset().top }, "slow");
+                    }, 50 );
+                }
+            });
+        }]
     };
 });
 
@@ -144,6 +173,11 @@ app.directive('flickitySlide', ['$injector', function($injector){
 
 
 
+
+
+//$('.presLink').click(function(e) {
+    //ga('send','event','pres_page','clicked', li.id, 0)
+//});
 
 
 

@@ -1,24 +1,29 @@
+<!-- <div ng-controller="presentationsController"> -->
 
-
-<div ng-controller="presentationsController">
     <section class="container">
 
-        <div class="row" ng-repeat="p in presentations">
+        <div class="row" ng-repeat="p in presentations" id="{{p.key}}">
+            <div scroll-to="selectedKey==p.key"></div>
             <div class="col-sm-3" > 
                 <img class="rounded img-fluid img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
             </div>
             
             <div class="col-sm-9 d-flex flex-column justify-content-between">
+                
                 <div> 
-                    <h3><a href="#!/presentations/{{p.key}}" mathjax-bind="p.title">  </a></h3>
+                    <h3 id="{{p.key}}"><a class="presLink" href="#!/presentations/{{p.key}}" mathjax-bind="p.title">  </a></h3>
 
                     <p ng-bind-html="p.authors | formatAuthors"></p> 
                     <p> <i>{{p.conference}}</i> {{p.location}} <b>{{p.date}}</b> </p>
-                    
-                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" ng-click="getAbstract(p.key)"> View abstract </button>
+<!--                     
+                    <button class="btn btn-outline-primary" ui-sref="presentations.{{p.key}}"> view abstract </button>
+                    <button class="btn btn-outline-primary" ui-sref="#!presentations/Nakano_EASTT_18/"> More of my presentations </button> -->
+
+                    <div class="text-justify" ng-bind-html="p.abstract | formatAuthors" ng-hide="selectedKey!=p.key"></div> 
           
                 </div>
             </div>
+
 
             <div class="col-sm-12" > 
                 <hr>  
@@ -26,39 +31,9 @@
             
         </div>
 
+        
+
     </section>
-
-
-
-
-
-
-
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-					<!-- <h5 class="modal-title">{{selected.title}}</h5> -->
-					<button type="button" class="close float-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-					<h3 class="modal-title">{{selected.title}}</h3>
-					<p ng-bind-html="selected.authors | formatAuthors"></p> 
-                  	<div ng-bind-html="selectedAbstract" ></div>
-                </div>
-                <div class="modal-footer">
-                  	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-
-
-
-
-</div>  
 
 
 
