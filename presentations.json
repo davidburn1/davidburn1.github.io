@@ -23,6 +23,13 @@
     "location":"Las Vegas, NV", 
     "date":"Nov 2019"
 },{
+    "key":"Dabrowski_UMC_19", 
+    "title":"Ultrafast magnetization dynamics of in-plane and out-of-plane exchange spring magnets", 
+    "authors":"<u>M. Dabrowski</u>, A. Frisk, D.M. Burn, D. Newman, R.C.C. Ward, T. Hesjedal, G. Hrkac, G. van der Laan and R.J. Hicken",
+    "conference":"Ultrafast Magnetism Conference", 
+    "location":"York", 
+    "date":"Oct 2019"
+},{
     "key":"Frisk_JEMS_19", 
     "title":"De-coupling of an exchange coupled CoPt/Py bilayer exchange spring with canted magnetic anisotropy using a Pt spacer", 
     "authors":"<u>A. Frisk</u>, M. Dabrowski, D.M. Burn, D. Newman, R.J. Hicken and G. van der Laan",
@@ -240,14 +247,14 @@
     "date":"Mar 2015"
 },{
     "key":"King_UKIERI_15", 
-    "title":"Manipulation of magnetic damping by the focused ion-beam irradiation induced intermixing of ferromagnetic/non-magnetic bilayers",
+    "title":"Local control of damping in ferromagnetic / non-magnetic bilayers by interfacial intermixing induced by focussed ion beam irradiaiton",
     "authors":"<u>J.A. King</u>, A. Ganguly, D.M. Burn, S. Pal, E. Sallabank, T.P.A. Hase, A.T. Hindmarch, A. Barman and D. Atkinson",
     "conference":"Durham UKIERI Workshop on magnetisation processes", 
     "location":"Durham", 
     "date":"Mar 2015"
 },{
     "key":"Burn_UKIERI_15", 
-    "title":"Magnetisation reversal behaviour in interconnected artificial spin ice", 
+    "title":"Magnetisation reversal behaviour in interconnected artificial spin ice structures", 
     "authors":"<u>D.M. Burn</u>, M. Chadha, L.F. Cohen and W.R. Branford",
     "conference":"Durham UKIERI Workshop on magnetisation processes", 
     "location":"Durham", 
@@ -302,15 +309,15 @@
     "location":"Manchester", 
     "date":"Apr 2014"
 },{
-    "key":"Branford_APS_14", 
-    "title":"Collective Properties of Nanomagnet Arrays; Electric and Magnetic Currents in Artificial Spin Ice",
+    "key":"Walton_APS_14", 
+    "title":"Control and influence of domain wall chirality in Artificial Spin Ice",
     "authors":" <u>S.K. Walton</u>, K. Zeissler, M. Chadha, D.M. Burn, S. Ladak, D.E. Read, T, L.F. Cohen and W.R. Branford",
     "conference":"APS March meeting", 
     "location":"Denver, Colorado", 
     "date":"Mar 2014"
 },{
-    "key":"Walton_APS_14", 
-    "title":"Control and influence of domain wall chirality in Artificial Spin Ice", 
+    "key":"Branford_APS_14", 
+    "title":"Collective Properties of Nanomagnet Arrays; Electric and Magnetic Currents in Artificial Spin Ice", 
     "authors":" <u>W.R. Branford</u>, K. Zeissler, M. Chadha, D.M. Burn, S. Ladak, D.E. Read, T. Tyliszczak and L.F. Cohen",
     "conference":"APS March meeting", 
     "location":"Denver, Colorado", 
@@ -408,7 +415,7 @@
     "date":"Feb 2011"
 },{
     "key":"Arac_ICNM_10", 
-    "title":"Controlling domain wall dynamics by focused Ga<sup>+</sup> ion irradiation", 
+    "title":"Fabrication and modification of magnetic structures using dual-beam focused ion beam (FIB) system", 
     "authors":"<u>E. Arac</u>, D.M. Burn, T.P.A. Hase and D. Atkinson",
     "conference":"International Conference on Nanomagnetism", 
     "location":"Gebze, Turkey", 
@@ -428,7 +435,7 @@
     "location":"Manchester", 
     "date":"Jul 2010"
 },{
-    "key":"Burn_EM_Opening_10", 
+    "key":"Burn_EMOpening_10", 
     "title":"Dual ion and electron beam system with multiple fabrication and structural analysis functionalities", 
     "authors":"<u>D.M. Burn</u>, E. Arac, L. Bowen and D. Atkinson",
     "conference":"Electron Microscopy Characterisation in the Physical and Biological Sciences", 

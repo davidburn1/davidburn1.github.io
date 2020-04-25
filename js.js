@@ -14,19 +14,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider.state("publications", {
         url: "/publications",
         templateUrl: "papers.html",
+        controller: 'papersController',
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Publications";
             $rootScope.selectedKey =  "";
             $("html,body").animate({ scrollTop: 0}, 10);
-            //$("body").scrollTop = 0;
         },
     });
 
-    $stateProvider.state("publications/{key}", {
-        url: "/publications/{key}",
-        templateUrl: "papers.html",
-        onEnter: function($rootScope){
+    $stateProvider.state("publications.key", {
+        url: "/{key}",
+        onEnter: function($rootScope, $stateParams){
             $rootScope.pageTitle = "David Burn - Publications";
+            $rootScope.selectedKey = $stateParams.key;
         },
     });
 
@@ -38,7 +38,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
             $rootScope.pageTitle = "David Burn - Presentations";
             $rootScope.selectedKey =  "";
             $("html,body").animate({ scrollTop: 0}, 10);
-            //$("body").scrollTop = 0;
         },
     });
 
@@ -89,7 +88,21 @@ app.run(['$rootScope', '$transitions', '$location', '$window', '$http', function
 //     return papers;
 // });
 
-app.controller('papersController', function($scope, $http) {
+app.controller('papersController', function($rootScope, $scope, $http) {
+
+    $scope.$watch("selectedKey", function() {
+        if ($rootScope.selectedKey == "") {return;}
+        $http.get("abstracts/papers/"+$rootScope.selectedKey+".html")
+        .then(function(response) {
+            for (var i=0; i<$rootScope.papers.length; i++) {
+                if ($rootScope.papers[i].key == $rootScope.selectedKey){
+                    $rootScope.papers[i].abstract = response.data; 
+                }
+            }
+        },
+        function(data) {
+        });
+    });
 
 });
 
@@ -114,7 +127,13 @@ app.controller('presentationsController', function($rootScope, $scope, $http) {
 app.filter('formatAuthors', function() {
     return function(authors) {
         if (authors === undefined) return ""
-        return authors.replace("D.M. Burn", "<b>D.M. Burn</b>");
+        var out = authors.replace("D.M. Burn", "<b>D.M. Burn</b>");
+        //out = out.replace(/\. /g, ".&nbsp;"); //replace spaces in names with no-linebreak spaces
+        out = out.replace(/ /g, "&nbsp;"); //replace spaces with no-linebreak spaces
+        out = out.replace(/,&nbsp;/g, ", "); // allow normal spaces after commas
+        out = out.replace(/&nbsp;and&nbsp;/g, " and "); // allow normal spaces around 'and'
+        return out;
+
     };
   });
 
@@ -136,12 +155,12 @@ app.filter('formatAuthors', function() {
 
 app.directive("scrollTo", function() {
     return {
-        controller: ["$scope", "$element", "$attrs", "$timeout", function($scope, $element, $attrs, $timeout) {
+        controller: ["$scope", "$element", "$attrs", "$timeout", "$rootScope", function($scope, $element, $attrs, $timeout, $rootScope) {
             $scope.$watch($attrs.scrollTo, function(value) {
                 if (value) { 
                     console.log("directive watch"); 
                     $timeout( function(){ // allow some time for previous abstract div to hide
-                        $("html,body").animate({ scrollTop: $('#'+$scope.selectedKey).offset().top }, "slow");
+                        $("html,body").animate({ scrollTop: $('#'+$rootScope.selectedKey).offset().top }, "slow");
                     }, 50 );
                 }
             });

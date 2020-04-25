@@ -1,6 +1,4 @@
 
-<div ng-controller="papersController">
-
     <br><br>
 
     <section class="container">
@@ -13,7 +11,8 @@
             </div>
         </div>
 
-        <div class="row" ng-repeat="p in papers">
+        <div class="row" ng-repeat="p in papers" id="{{p.key}}">
+            <div scroll-to="selectedKey==p.key"></div>
             <div class="col-sm-3" > 
                 <img class="rounded img-fluid img-thumbnail" ng-src="/images/papers/{{p.key}}.jpg" alt="{{p.title}}">
             </div>
@@ -25,6 +24,8 @@
                     <p ng-bind-html="p.authors | formatAuthors"></p> 
                     <p> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </p>
                     <p> DOI: <a href="https://doi.org/{{p.doi}}"> {{p.doi}} </a> </p>
+
+                    <div class="text-justify" ng-bind-html="p.abstract" ng-hide="selectedKey!=p.key"></div> 
                 </div>
                 <!-- <div>
                     <button class="btn btn-default pull-right rm">Read more..</button>			
@@ -37,4 +38,3 @@
             
         </div>
     </section>
-</div>

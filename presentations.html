@@ -1,39 +1,37 @@
-<!-- <div ng-controller="presentationsController"> -->
+<section class="container">
 
-    <section class="container">
-
-        <div class="row" ng-repeat="p in presentations" id="{{p.key}}">
-            <div scroll-to="selectedKey==p.key"></div>
-            <div class="col-sm-3" > 
-                <img class="rounded img-fluid img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
-            </div>
+    <div class="row" ng-repeat="p in presentations" id="{{p.key}}">
+        <div scroll-to="selectedKey==p.key"></div>
+        <div class="col-sm-3" > 
+            <img class="rounded img-fluid img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
+        </div>
+        
+        <div class="col-sm-9 d-flex flex-column justify-content-between">
             
-            <div class="col-sm-9 d-flex flex-column justify-content-between">
-                
-                <div> 
-                    <h3 id="{{p.key}}"><a class="presLink" href="#!/presentations/{{p.key}}" mathjax-bind="p.title">  </a></h3>
+            <div> 
+                <h3 id="{{p.key}}"><a class="presLink" href="#!/presentations/{{p.key}}" mathjax-bind="p.title">  </a></h3>
 
-                    <p ng-bind-html="p.authors | formatAuthors"></p> 
-                    <p> <i>{{p.conference}}</i> {{p.location}} <b>{{p.date}}</b> </p>
+                <p ng-bind-html="p.authors | formatAuthors"></p> 
+                <p> <i>{{p.conference}}</i> {{p.location}} <b>{{p.date}}</b> </p>
 <!--                     
-                    <button class="btn btn-outline-primary" ui-sref="presentations.{{p.key}}"> view abstract </button>
-                    <button class="btn btn-outline-primary" ui-sref="#!presentations/Nakano_EASTT_18/"> More of my presentations </button> -->
+                <button class="btn btn-outline-primary" ui-sref="presentations.{{p.key}}"> view abstract </button>
+                <button class="btn btn-outline-primary" ui-sref="#!presentations/Nakano_EASTT_18/"> More of my presentations </button> -->
 
-                    <div class="text-justify" ng-bind-html="p.abstract | formatAuthors" ng-hide="selectedKey!=p.key"></div> 
-          
-                </div>
+                <div class="text-justify" ng-bind-html="p.abstract" ng-hide="selectedKey!=p.key"></div> 
+        
             </div>
-
-
-            <div class="col-sm-12" > 
-                <hr>  
-            </div>
-            
         </div>
 
-        
 
-    </section>
+        <div class="col-sm-12" > 
+            <hr>  
+        </div>
+        
+    </div>
+
+    
+
+</section>
 
 
 

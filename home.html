@@ -163,6 +163,7 @@
 
 
 <section>
+	<div class="container">
 	<!-- <div class="container" ng-controller="papersController"> -->
 		<h2> Recent publications  </h2>
 	
@@ -185,7 +186,7 @@
 				<button class="btn btn-primary float-right" ui-sref="publications"> See all publications </button>
 			</div>
 		</div>
-	<!-- </div> -->
+	</div>
 </section>
 
 
@@ -248,7 +249,7 @@
     </style>
 
     <!-- <div class="container" ng-controller="presentationsController"> -->
-
+	<div class="container">
 		<br>
 		<div class="row">
 			<div class="col-lg-6 text-center">
@@ -258,20 +259,14 @@
 			</div>
 			<div class="col-lg-6">
 				<flickity options='{"pageDots":false,"selectedAttraction":0.01,"friction":0.15}'>
-					<flickity-slide ng-repeat="p in presentations">
+					<flickity-slide ng-repeat="p in presentations|limitTo:6">
 						<img class="img-rounded img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
 					</flickity-slide>
 				</flickity>
 			</div>
 
 		</div>
-
-
-
-        <!-- <div class="row justify-content-md-center">
-            <button id="btn_view_pres" type="button" class="btn btn-primary">Find out more</button>
-        </div> -->
-    <!-- </div> -->
+    </div>
 </section>
 
 
