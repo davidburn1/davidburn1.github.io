@@ -1,29 +1,10 @@
-<!-- <script type="text/javascript" src="/js/jquery.scrolldepth.min.js"></script> -->
-<!-- <script type="text/javascript" src="/js/js.js"></script> -->
-	
-<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:600,700" rel="stylesheet" type="text/css" /> -->
-
-
-<!-- <script>
-	// scroll down to start of content
-	$('#read_start').click(function () {
-		$('html, body').stop().animate({
-		scrollTop: $('#start').offset().top
-		}, 1500);
-	});
-</script> -->
-
-
-
-
-
 
 
 <section>
 	<div class="jumbotron">
 		<div class="row justify-content-md-center align-items-center">
 			<div class="col-md-6 col-lg-4 align-self-end">
-				<img class="img-fluid" src="/images/static/portrait.png">
+				<img class="img-fluid" src="/images/static/portrait.png" alt="David Burn">
 			</div>
 			
 			<div class="col-md-6">	
@@ -164,14 +145,13 @@
 
 <section>
 	<div class="container">
-	<!-- <div class="container" ng-controller="papersController"> -->
 		<h2> Recent publications  </h2>
 	
 		<div class="row">
 			<div class="col-lg-6" ng-repeat="p in papers|limitTo:4">
 				<div class='row'>
 					<div class="col-sm-4">
-						<img class="hidden-xs img-fluid img-thumbnail" ng-src="/images/papers/{{p.key}}.jpg">
+						<img class="hidden-xs img-fluid img-thumbnail" ng-src="/images/papers/{{p.key}}.jpg" alt="{{p.title}}">
 					</div>
 					<div class="col-sm-8">
 						<p> <b> <a href="#!/publications/{{p.key}}">  {{p.title}} </a> </b></p>
@@ -195,41 +175,6 @@
 <br/><hr/><br/>
 
 
-
-
-<!-- <section>
-    <style>
-        flickity{
-        display:block;
-        position:relative;
-        }
-        flickity-slide{
-            width:270px;
-            height:360px;
-        margin-right:10px;
-        display:flex;
-        justify-content:center;
-        }
-        flickity-slide img {
-            width:250px;
-        }
-    </style>
-
-    <div class="container" ng-controller="presentationsController">
-        <h1 class="text-center"> Look out for my work </h1>
-        <p class="lead"> Presented frequently at magnetism conferences, both in the UK and internationally. </p>
-        <br>
-
-        <flickity options='{"pageDots":false,"selectedAttraction":0.01,"friction":0.15, "freeScroll":true}'>
-            <flickity-slide ng-repeat="p in presentations">
-                <img class="img-rounded img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
-            </flickity-slide>
-        </flickity>
-    </div>
-    <br>
-</section> -->
-
-
 <section>
     <style>
         flickity{
@@ -248,7 +193,6 @@
         }
     </style>
 
-    <!-- <div class="container" ng-controller="presentationsController"> -->
 	<div class="container">
 		<br>
 		<div class="row">
@@ -259,7 +203,7 @@
 			</div>
 			<div class="col-lg-6">
 				<flickity options='{"pageDots":false,"selectedAttraction":0.01,"friction":0.15}'>
-					<flickity-slide ng-repeat="p in presentations|limitTo:6">
+					<flickity-slide ng-repeat="p in presentations | limitTo:6">
 						<img class="img-rounded img-thumbnail" ng-src="/images/presentations/{{p.key}}.jpg" alt="{{p.title}}">
 					</flickity-slide>
 				</flickity>
