@@ -8,7 +8,37 @@ app.config(function($stateProvider, $urlRouterProvider) {
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Magnetism";
             $rootScope.selectedKey =  "";
+
+            console.log("on enter");
+            console.log($('a'));
         },
+        
+        onExit: function(){
+            console.log("Leaving the state");
+        },
+
+        onSuccess: function(){
+            console.log("on success");
+            $('#myTab a').on('click', function (e) {
+                console.log("clicked");
+                e.preventDefault();
+                $(this).tab('show');
+              })
+
+        },
+
+
+
+        onFinish: function(){
+            console.log("on finish");
+            $('#myTab a').on('click', function (e) {
+                console.log("clicked");
+                e.preventDefault();
+                $(this).tab('show');
+              })
+
+        }
+
     });
 
     $stateProvider.state("publications", {
