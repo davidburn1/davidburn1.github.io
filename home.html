@@ -200,7 +200,7 @@
 						<img class="hidden-xs img-fluid img-thumbnail" ng-src="/images/papers/{{p.key}}.jpg" alt="{{p.title}}">
 					</div>
 					<div class="col-sm-8">
-						<p> <b> <a href="#!/publications/{{p.key}}">  {{p.title}} </a> </b></p>
+						<p> <b> <a href="#!/publications/{{p.key}}" ng-bind-html="p.title | formatLatex">  </a> </b></p>
 						<p ng-bind-html="p.authors | formatAuthors"></p> 
 						<p> <a href="https://doi.org/{{p.doi}}"> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </a></p>
 					</div>

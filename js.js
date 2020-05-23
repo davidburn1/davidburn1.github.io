@@ -135,30 +135,44 @@ app.filter('formatAuthors', function() {
     return function(authors) {
         if (authors === undefined) return ""
         var out = authors.replace("D.M. Burn", "<b>D.M. Burn</b>");
-        //out = out.replace(/\. /g, ".&nbsp;"); //replace spaces in names with no-linebreak spaces
         out = out.replace(/ /g, "&nbsp;"); //replace spaces with no-linebreak spaces
         out = out.replace(/,&nbsp;/g, ", "); // allow normal spaces after commas
         out = out.replace(/&nbsp;and&nbsp;/g, " and "); // allow normal spaces around 'and'
         return out;
-
-    };
-  });
-
-
-
-
-  app.directive("mathjaxBind", function() {
-    return {
-        restrict: "A",
-        controller: ["$scope", "$element", "$attrs",
-            function($scope, $element, $attrs) {
-                $scope.$watch($attrs.mathjaxBind, function(texExpression) {
-                    $element.html(texExpression);
-                    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $element[0]]);
-                });
-            }]
     };
 });
+
+
+app.filter('formatLatex', function() {
+    function replacer(match, text, offset, string) {
+        text = text.replace(/_{(.*?)}/g, "<sub>$1</sub>"); // multi character subscript
+        text = text.replace(/\^{(.*?)}/g, "<sup>$1</sup>"); // multi character superscript
+        text = text.replace(/_(.)/g, "<sub>$1</sub>"); // single character subscript
+        text = text.replace(/\^(.)/g, "<sup>$1</sup>"); // single character superscript
+        return text;
+    }
+
+    return function(text) {
+        if (text === undefined) return ""
+        return text.replace(/\$(.*?)\$/g, replacer); // detects all math mode 
+    };
+});
+
+
+
+
+//   app.directive("mathjaxBind", function() {
+//     return {
+//         restrict: "A",
+//         controller: ["$scope", "$element", "$attrs",
+//             function($scope, $element, $attrs) {
+//                 $scope.$watch($attrs.mathjaxBind, function(texExpression) {
+//                     $element.html(texExpression);
+//                     MathJax.Hub.Queue(["Typeset", MathJax.Hub, $element[0]]);
+//                 });
+//             }]
+//     };
+// });
 
 app.directive("scrollTo", function() {
     return {

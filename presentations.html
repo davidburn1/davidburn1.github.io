@@ -11,15 +11,13 @@
         <div class="col-sm-9 d-flex flex-column justify-content-between">
             
             <div> 
-                <h3 id="{{p.key}}"><a class="presLink" href="#!/presentations/{{p.key}}" mathjax-bind="p.title">  </a></h3>
+                <!-- <h3 id="{{p.key}}"><a class="presLink" href="#!/presentations/{{p.key}}" mathjax-bind="p.title">  </a></h3> -->
+                <h3><a class="presLink" href="#!/presentations/{{p.key}}" ng-bind-html="p.title | formatLatex">  </a></h3>
 
                 <p ng-bind-html="p.authors | formatAuthors"></p> 
                 <p> <i>{{p.conference}}</i> {{p.location}} <b>{{p.date}}</b> </p>
-<!--                     
-                <button class="btn btn-outline-primary" ui-sref="presentations.{{p.key}}"> view abstract </button>
-                <button class="btn btn-outline-primary" ui-sref="#!presentations/Nakano_EASTT_18/"> More of my presentations </button> -->
 
-                <div class="text-justify" ng-bind-html="p.abstract" ng-hide="selectedKey!=p.key"></div> 
+                <div class="text-justify" ng-bind-html="p.abstract | formatLatex" ng-hide="selectedKey!=p.key"></div> 
         
             </div>
         </div>

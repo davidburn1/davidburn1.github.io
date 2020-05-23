@@ -19,13 +19,15 @@
         
         <div class="col-sm-9 d-flex flex-column justify-content-between">
             <div> 
-                <h3><a href="#!/publications/{{p.key}}" mathjax-bind="p.title">  </a></h3>
+                <!-- <h3><a href="#!/publications/{{p.key}}" mathjax-bind="p.title">  </a></h3> -->
+                <h3><a href="#!/publications/{{p.key}}" ng-bind-html="p.title | formatLatex"> </a></h3>
 
                 <p ng-bind-html="p.authors | formatAuthors"></p> 
                 <p> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </p>
                 <p> DOI: <a href="https://doi.org/{{p.doi}}"> {{p.doi}} </a> </p>
 
-                <div class="text-justify" ng-bind-html="p.abstract" ng-hide="selectedKey!=p.key"></div> 
+                <!-- <div class="text-justify" ng-bind-html="p.abstract" ng-hide="selectedKey!=p.key"></div>  -->
+                <div class="text-justify" ng-bind-html="p.abstract | formatLatex" ng-hide="selectedKey!=p.key"></div> 
             </div>
             <!-- <div>
                 <button class="btn btn-default pull-right rm">Read more..</button>			
