@@ -8,37 +8,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Magnetism";
             $rootScope.selectedKey =  "";
-
-            console.log("on enter");
-            console.log($('a'));
         },
         
-        onExit: function(){
-            console.log("Leaving the state");
-        },
-
-        onSuccess: function(){
-            console.log("on success");
-            $('#myTab a').on('click', function (e) {
-                console.log("clicked");
-                e.preventDefault();
-                $(this).tab('show');
-              })
-
-        },
-
-
-
-        onFinish: function(){
-            console.log("on finish");
-            $('#myTab a').on('click', function (e) {
-                console.log("clicked");
-                e.preventDefault();
-                $(this).tab('show');
-              })
-
-        }
-
     });
 
     $stateProvider.state("publications", {
@@ -54,9 +25,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state("publications.key", {
         url: "/{key}",
-        onEnter: function($rootScope, $stateParams){
+        onEnter: function($rootScope, $stateParams, $timeout){
             $rootScope.pageTitle = "David Burn - Publications";
             $rootScope.selectedKey = $stateParams.key;
+
+
+//            $timeout( function(){ // allow some time for previous abstract div to hide
+//                $("html,body").animate({ scrollTop: $('#'+$stateParams.key).offset().top }, "slow");  
+//            }, 500 );
+
         },
     });
 
@@ -220,31 +197,3 @@ app.directive('flickitySlide', ['$injector', function($injector){
 }])
 
 
-
-
-
-
-//$('.presLink').click(function(e) {
-    //ga('send','event','pres_page','clicked', li.id, 0)
-//});
-
-
-
-// $carousel.on('staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
-//     if ( !cellElement ) { return; }   // dismiss if cell was not clicked
-//     console.log( 'Flickity clicked at ' + cellIndex)
-//     $carousel.flickity( 'selectCell', cellIndex );
-//     ga('send','event','pres_slider','clicked','', cellElement)
-// });
-
-// $carousel.on('select.flickity', function() {
-//     pres = presentations[flkty.selectedIndex]
-//     $('#presTitle').html(pres.title)
-//     $('#presConference').html(pres.conference + " - " + pres.date)
-//     ga('send','event','pres_slider','selected',pres.key, pres.title)
-// })
-
-// $('#btn_view_pres').click(function() {
-//     pres = presentations[flkty.selectedIndex]
-//     document.location.href="/presentations#" + pres.key;
-// });
