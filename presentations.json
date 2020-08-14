@@ -1,7 +1,41 @@
 [
     
+
+
+
+
+
+
+
+
+
+
+
     
 {
+    "key":"Burn_ExSpring_20", 
+    "title":"Magnetization dynamics in chiral spin structures revealed by diffractive ferromagnetic resonance (DFMR)", 
+    "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal and G. van der Laan",
+    "conference":"Exchange Spring", 
+    "location":"Exeter", 
+    "date":"July 2020"
+},{
+    "key":"Dabrowski_ExSpring_20", 
+    "title":"Coherent transfer of spin angular momentum within antiferromagnetic thin NiO films", 
+    "authors":"M. Dabrowski, T. Nakano, <u>D.M. Burn</u>, D.G. Newman, A. Frisk, Q. Li, M. Yang, C. Klewe, P. Shafer, E. Arenholz, T. Hesjedal, Z.Q. Qui, G. van der Laan and R.J. Hicken",
+    "conference":"Exchange Spring", 
+    "location":"Exeter", 
+    "date":"July 2020"
+},{
+    "key":"Dabrowski_Extremag_20", 
+    "title":"Layer-selective magnetization reversal and optical switching in synthetic ferrimagnets", 
+    "authors":"<u>M. Dabrowski</u>, J.N. Scott, W.R. Hendren, A. Frisk, D.M. Burn, P.S. Keatley, D.G. Newman, T. Hesjedal, G. van der Laan, RM. Bowman and R.J. Hicken",
+    "conference":"Exchange Spring", 
+    "location":"Exeter", 
+    "date":"July 2020"
+},{
+
+
     "key":"Burn_MMM_19_b", 
     "title":"Manipulation of skyrmion motion by magnetic field gradients", 
     "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal, G. van der Laan",
