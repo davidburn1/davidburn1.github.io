@@ -1,11 +1,20 @@
 [
 
 
-
+    
 {
+    "key":"Burn_PRL_2020",
+    "title":"Depth-Resolved Magnetization Dynamics Revealed by X-Ray Reflectometry Ferromagnetic Resonance",
+    "authors":"D.M. Burn, S.L. Zhang, G.Q. Yu, Y. Guang, H.J. Chen, X.P. Qiu, G. van der Laan, and T. Hesjedal",
+    "journal":"Phys. Rev. Lett.",
+    "volume":"125",
+    "page":"137201 ",
+    "year":2020,
+    "doi":"10.1103/PhysRevLett.125.137201"
+},{
     "key":"Guang_AdvMat_2020",
     "title":"Electron beam lithography of magnetic skyrmions",
-    "authors":"Y. Guang, Y. Peng, Z. Yan, Y. Liu, J. Zhang, X. Zeng, S. Zhang, S. Zhang, D.M. Burn , N. Jaouen, J. Wei, H. Xu, J. Feng, C. Fang, G. van der Laan, T. Hesjedal, B. Cui, X. Zhang, G. Yu and X. Han",
+    "authors":"Y. Guang, Y. Peng, Z. Yan, Y. Liu, J. Zhang, X. Zeng, S. Zhang, S. Zhang, D.M. Burn, N. Jaouen, J. Wei, H. Xu, J. Feng, C. Fang, G. van der Laan, T. Hesjedal, B. Cui, X. Zhang, G. Yu and X. Han",
     "journal":"Adv. Mater.",
     "volume":"",
     "page":"2003003",
@@ -23,7 +32,7 @@
 },{
     "key":"Watson_PRB_2020",
     "title":"Direct observation of the energy gain underpinning ferromagnetic superexchange in the electronic structure of CrGeTe$_3$",
-    "authors":"M.D. Watson, I. Markovi, F. Mazzola, A. Rajan, E.A. Morales, D.M. Burn , T. Hesjedal, G. van der Laan, S. Mukherjee, T.K. Kim, C. Bigi, I. Vobornik, M.C. Hatnean, G. Balakrishnan and P.D.C. King",
+    "authors":"M.D. Watson, I. Markovi, F. Mazzola, A. Rajan, E.A. Morales, D.M. Burn, T. Hesjedal, G. van der Laan, S. Mukherjee, T.K. Kim, C. Bigi, I. Vobornik, M.C. Hatnean, G. Balakrishnan and P.D.C. King",
     "journal":"Phys. Rev. B",
     "volume":101,
     "page":"205125",
