@@ -4,15 +4,29 @@
 
 
 
-
-
-
-
-
-
-
-    
 {
+    "key":"Burn_MMM_2020_a", 
+    "title":"Magnetization dynamics in topological spin structures revealed by diffractive ferromagnetic resonance (DFMR) INVITED", 
+    "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal and G. van der Laan",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"November 2020"
+},
+{
+    "key":"Burn_MMM_2020_b", 
+    "title":"Field and temperature dependence of the skyrmion lattice phase and the appearance of a second helical phase in FeGe", 
+    "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal and G. van der Laan",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"November 2020"
+},{
+    "key":"Dabrowski_MMM_2020", 
+    "title":"Layer-selective magnetization reversal and optical switching in Ni3Pt/Ir/Co synthetic ferrimagnets", 
+    "authors":"<u>M. Dabrowski</u>, J.N. Scott, W.R. Hendren, A. Frisk, D.M. Burn, P.S. Keatley, D.G. Newman, C. Klewe, A.T. N’Diaye, P. Shafer, T. Hesjedal, G. van der Laan, R.M. Bowman and R.J. Hicken",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"November 2020"
+},{
     "key":"Burn_ExSpring_20", 
     "title":"Magnetization dynamics in chiral spin structures revealed by diffractive ferromagnetic resonance (DFMR)", 
     "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal and G. van der Laan",
