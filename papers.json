@@ -1,8 +1,17 @@
 [
 
-
     
+
 {
+    "key":"Dabrowski_AMI_2020",
+    "title":"Optically and Microwave-Induced Magnetization Precession in [Co/Pt]/NiFe Exchange Springs",
+    "authors":"M. Da̧browski, A. Frisk, D.M. Burn, D.G. Newman, C. Klewe, A.T. N’Diaye, P. Shafer, E. Arenholz, G.J. Bowden, T. Hesjedal, G. van der Laan, G. Hrkac, and R.J. Hicken",
+    "journal":"Appl. Mater. Interfaces",
+    "volume":"46",
+    "page":"52116 ",
+    "year":2020,
+    "doi":"10.1021/acsami.0c14058"
+},{
     "key":"Burn_PRL_2020",
     "title":"Depth-Resolved Magnetization Dynamics Revealed by X-Ray Reflectometry Ferromagnetic Resonance",
     "authors":"D.M. Burn, S.L. Zhang, G.Q. Yu, Y. Guang, H.J. Chen, X.P. Qiu, G. van der Laan, and T. Hesjedal",
