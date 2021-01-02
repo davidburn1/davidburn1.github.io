@@ -8,8 +8,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Magnetism";
             $rootScope.selectedKey =  "";
-        },
-        
+        },  
     });
 
     $stateProvider.state("publications", {
@@ -28,12 +27,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
         onEnter: function($rootScope, $stateParams, $timeout){
             $rootScope.pageTitle = "David Burn - Publications";
             $rootScope.selectedKey = $stateParams.key;
-
-
-//            $timeout( function(){ // allow some time for previous abstract div to hide
-//                $("html,body").animate({ scrollTop: $('#'+$stateParams.key).offset().top }, "slow");  
-//            }, 500 );
-
         },
     });
 
@@ -56,6 +49,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
         },
     });
 
+    $stateProvider.state("news", {
+        url: "/news",
+        templateUrl: "news.html",
+        // controller: 'newsController',
+        // onEnter: function($rootScope){
+        //     $rootScope.pageTitle = "David Burn - News";
+        //     $rootScope.selectedKey =  "";
+        //     $("html,body").animate({ scrollTop: 0}, 10);
+        // },
+    });
+
+
     $urlRouterProvider.otherwise('/');
 });
 
@@ -72,12 +77,22 @@ app.run(['$rootScope', '$transitions', '$location', '$window', '$http', function
 
     $http.get("papers.json")
     .then(function(response) {
-        $rootScope.papers= response.data;
+        $rootScope.papers = response.data;
+        
+        $rootScope.papersObject = {};
+        for (var i = 0; i < $rootScope.papers.length; i++) {
+            $rootScope.papersObject[$rootScope.papers[i].key] = $rootScope.papers[i];
+        }
     });
 
     $http.get("presentations.json")
     .then(function(response) {
         $rootScope.presentations= response.data;
+    });
+
+    $http.get("news.json")
+    .then(function(response) {
+        $rootScope.news = response.data;
     });
 
  }]);
@@ -128,6 +143,12 @@ app.controller('presentationsController', function($rootScope, $scope, $http) {
         function(data) {
         });
     });
+
+});
+
+
+app.controller('newsController', function($rootScope, $scope, $http) {
+
 
 });
 
