@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ui.router', 'ngSanitize']);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider.state("/", {
         url: "/",
@@ -62,6 +62,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 
     $urlRouterProvider.otherwise('/');
+
+    $locationProvider.html5Mode(true).hashPrefix('!')
 });
 
 
