@@ -9,7 +9,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider.state("/", {
         url: "/",
-        templateUrl: "home.html",
+        templateUrl: "views/home.html",
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Magnetism";
             $rootScope.selectedKey =  "";
@@ -18,7 +18,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider.state("publications", {
         url: "/publications",
-        templateUrl: "papers.html",
+        templateUrl: "views/papers.html",
         controller: 'papersController',
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Publications";
@@ -37,7 +37,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider.state("presentations", {
         url: "/presentations",
-        templateUrl: "presentations.html",
+        templateUrl: "views/presentations.html",
         controller: 'presentationsController',
         onEnter: function($rootScope){
             $rootScope.pageTitle = "David Burn - Presentations";
@@ -56,7 +56,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider.state("news", {
         url: "/news",
-        templateUrl: "news.html",
+        templateUrl: "views/news.html",
         // controller: 'newsController',
         // onEnter: function($rootScope){
         //     $rootScope.pageTitle = "David Burn - News";
