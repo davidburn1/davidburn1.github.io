@@ -20,7 +20,7 @@
         <div class="col-sm-9 d-flex flex-column justify-content-between">
             <div> 
                 <!-- <h3><a href="#!/publications/{{p.key}}" mathjax-bind="p.title">  </a></h3> -->
-                <h3><a href="#!/publications/{{p.key}}" ng-bind-html="p.title | formatLatex"> </a></h3>
+                <h3><a href="/publications/{{p.key}}" ng-bind-html="p.title | formatLatex"> </a></h3>
 
                 <p ng-bind-html="p.authors | formatAuthors"></p> 
                 <p> <i>{{p.journal}}</i> <b>{{p.volume}}</b>, {{p.page}} ({{p.year}}) </p>
