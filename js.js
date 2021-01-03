@@ -1,11 +1,8 @@
 var app = angular.module('app', ['ui.router', 'ngSanitize']);
 
-
-
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.hashPrefix(''); // by default '!'
+    $locationProvider.hashPrefix(''); 
     $locationProvider.html5Mode(true);
-    // $locationProvider.html5Mode(true).hashPrefix('!')
 
     $stateProvider.state("/", {
         url: "/",
@@ -30,7 +27,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state("publications.key", {
         url: "/{key}",
         onEnter: function($rootScope, $stateParams, $timeout){
-            $rootScope.pageTitle = "David Burn - Publications";
+            $rootScope.pageTitle = "David Burn - " + $rootScope.papersObject[$stateParams.key].title;
             $rootScope.selectedKey = $stateParams.key;
         },
     });
@@ -49,7 +46,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state("presentations.key", {
         url: "/{key}",
         onEnter: function ($rootScope, $stateParams) {
-            $rootScope.pageTitle = "David Burn - Presentations - " + $stateParams.key;
+            $rootScope.pageTitle = "David Burn - " + $rootScope.presentationsObject[$stateParams.key].title;
             $rootScope.selectedKey = $stateParams.key;
         },
     });
@@ -57,12 +54,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state("news", {
         url: "/news",
         templateUrl: "views/news.html",
-        // controller: 'newsController',
-        // onEnter: function($rootScope){
-        //     $rootScope.pageTitle = "David Burn - News";
-        //     $rootScope.selectedKey =  "";
-        //     $("html,body").animate({ scrollTop: 0}, 10);
-        // },
     });
 
 
@@ -95,6 +86,11 @@ app.run(['$rootScope', '$transitions', '$location', '$window', '$http', function
     $http.get("presentations.json")
     .then(function(response) {
         $rootScope.presentations= response.data;
+
+        $rootScope.presentationsObject = {};
+        for (var i = 0; i < $rootScope.presentations.length; i++) {
+            $rootScope.presentationsObject[$rootScope.presentations[i].key] = $rootScope.presentations[i];
+        }
     });
 
     $http.get("news.json")
@@ -104,21 +100,7 @@ app.run(['$rootScope', '$transitions', '$location', '$window', '$http', function
 
  }]);
 
-
-// app.service('papers', function($rootScope, $http){
-//     var papers = {};
-//     papers.data = [];
-
-//     $http.get("papers.json")
-//     .then(function(response) {
-//         papers.data = response.data;
-//     });
-  
-//     return papers;
-// });
-
 app.controller('papersController', function($rootScope, $scope, $http) {
-
     $scope.$watch("selectedKey", function() {
         if ($rootScope.selectedKey == "") {return;}
         $http.get("abstracts/papers/"+$rootScope.selectedKey+".html")
@@ -136,7 +118,6 @@ app.controller('papersController', function($rootScope, $scope, $http) {
 });
 
 app.controller('presentationsController', function($rootScope, $scope, $http) {
-
     $scope.$watch("selectedKey", function() {
         if ($rootScope.selectedKey == "") {return;}
         $http.get("abstracts/presentations/"+$rootScope.selectedKey+".html")
@@ -150,14 +131,9 @@ app.controller('presentationsController', function($rootScope, $scope, $http) {
         function(data) {
         });
     });
-
 });
 
 
-app.controller('newsController', function($rootScope, $scope, $http) {
-
-
-});
 
 app.filter('formatAuthors', function() {
     return function(authors) {
@@ -188,19 +164,6 @@ app.filter('formatLatex', function() {
 
 
 
-
-//   app.directive("mathjaxBind", function() {
-//     return {
-//         restrict: "A",
-//         controller: ["$scope", "$element", "$attrs",
-//             function($scope, $element, $attrs) {
-//                 $scope.$watch($attrs.mathjaxBind, function(texExpression) {
-//                     $element.html(texExpression);
-//                     MathJax.Hub.Queue(["Typeset", MathJax.Hub, $element[0]]);
-//                 });
-//             }]
-//     };
-// });
 
 app.directive("scrollTo", function() {
     return {
