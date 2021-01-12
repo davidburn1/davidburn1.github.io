@@ -1,8 +1,25 @@
 [
-
-    
+  
 
 {
+    "key":"Burn_AIP_2021",
+    "title":"Magnetization dynamics in ordered spin structures revealed by diffractive and reflectometry ferromagnetic resonance",
+    "authors":"D.M. Burn, S.L. Zhang, G. van der Laan and T. Hesjedal",
+    "journal":"AIP Advances",
+    "volume":"11",
+    "page":"015327",
+    "year":2021,
+    "doi":"10.1063/9.0000058"
+},{
+    "key":"Ran_PRL_2021",
+    "title":"Creation of a chiral bobber lattice in helimagnet-multilayer heterostructures",
+    "authors":"K. Ran, Y. Liu, Y. Guang, D.M. Burn,  G. van der Laan, T. Hesjedal H. Du G. Yu and S.L. Zhang",
+    "journal":"Phys. Rev. Lett",
+    "volume":"126",
+    "page":"017204",
+    "year":2021,
+    "doi":"10.1103/PhysRevLett.126.017204"
+},{
     "key":"Dabrowski_AMI_2020",
     "title":"Optically and Microwave-Induced Magnetization Precession in [Co/Pt]/NiFe Exchange Springs",
     "authors":"M. Da̧browski, A. Frisk, D.M. Burn, D.G. Newman, C. Klewe, A.T. N’Diaye, P. Shafer, E. Arenholz, G.J. Bowden, T. Hesjedal, G. van der Laan, G. Hrkac, and R.J. Hicken",
