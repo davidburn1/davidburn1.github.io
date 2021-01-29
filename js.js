@@ -27,7 +27,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state("publications.key", {
         url: "/{key}",
         onEnter: function($rootScope, $stateParams, $timeout){
-            $rootScope.pageTitle = "David Burn - " + $rootScope.papersObject[$stateParams.key].title;
+            //$rootScope.pageTitle = "David Burn - " + $rootScope.papersObject[$stateParams.key].title;
             $rootScope.selectedKey = $stateParams.key;
         },
     });
@@ -46,7 +46,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state("presentations.key", {
         url: "/{key}",
         onEnter: function ($rootScope, $stateParams) {
-            $rootScope.pageTitle = "David Burn - " + $rootScope.presentationsObject[$stateParams.key].title;
+            //$rootScope.pageTitle = "David Burn - " + $rootScope.presentationsObject[$stateParams.key].title;
             $rootScope.selectedKey = $stateParams.key;
         },
     });
