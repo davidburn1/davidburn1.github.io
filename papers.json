@@ -1,7 +1,16 @@
 [
-  
+
 
 {
+    "key":"Gladczuk_PRB_2021",
+    "title":"Spin-current mediated exchange coupling in MgO-based magnetic tunnel junctions",
+    "authors":"L. Gladczuk, L. Gladczuk, P. Dluzewski, K. Lasek, P. Aleshkevych, D.M. Burn , G. van der Laan, and T. Hesjedal",
+    "journal":"Phys. Rev. B",
+    "volume":"103",
+    "page":"064416",
+    "year":2021,
+    "doi":"10.1103/PhysRevB.103.064416"
+},{
     "key":"Burn_AIP_2021",
     "title":"Magnetization dynamics in ordered spin structures revealed by diffractive and reflectometry ferromagnetic resonance",
     "authors":"D.M. Burn, S.L. Zhang, G. van der Laan and T. Hesjedal",
