@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import parseLatex from '../components/Latex';
 
@@ -42,8 +42,8 @@ return (
     return (
         <div className="row" key={d.key}>
             <div className="col-sm-3" > 
-                {/* <img class="rounded img-fluid img-thumbnail" src="/images/news/{d.key}.png" alt="{d.title}"/> */}
-                <Image src={"/images/news/"+d.key+".png"} alt="{d.title}" width={245} height={150}/>
+                <img class="rounded img-fluid img-thumbnail" src="/images/news/{d.key}.png" alt="{d.title}"/>
+                {/* <Image src={"/images/news/"+d.key+".png"} alt="{d.title}" width={245} height={150}/> */}
             </div>
             
             <div className="col-sm-9 d-flex flex-column justify-content-between">

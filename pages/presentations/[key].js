@@ -31,7 +31,7 @@ export async function getStaticPaths() {
     const paths = presentationsJson.map(p => ({
         params: { key: p.key }  
     }));
-    return { paths, fallback:true  };
+    return { paths, fallback:false  };
 }
 
 

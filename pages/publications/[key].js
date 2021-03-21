@@ -19,7 +19,7 @@ export async function getStaticPaths() {
     const paths = papersJson.map(p => ({
         params: { key: p.key }  
     }));
-    return { paths, fallback:true  };
+    return { paths, fallback:false  };
 }
 
 
