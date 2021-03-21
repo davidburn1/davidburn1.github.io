@@ -1,12 +1,7 @@
-import Head from 'next/head'
 import Link from 'next/link'
 // import Image from 'next/image'
 
 import parseLatex from '../components/Latex';
-
-// import FormatLatex from '../components/Formats';
-
-
 
 import newsJson from  '../data/news.json';
 import papersJson from  '../data/papers.json';
@@ -42,7 +37,7 @@ return (
     return (
         <div className="row" key={d.key}>
             <div className="col-sm-3" > 
-                <img class="rounded img-fluid img-thumbnail" src="/images/news/{d.key}.png" alt="{d.title}"/>
+                <img className="rounded img-fluid img-thumbnail" src={"/images/news/"+d.key+".png"} alt="{d.title}"/>
                 {/* <Image src={"/images/news/"+d.key+".png"} alt="{d.title}" width={245} height={150}/> */}
             </div>
             
@@ -54,7 +49,7 @@ return (
                         <br/>
                         {/* {d.publication} */}
                         {/* <Link href={"publications/"+d.publication}> publication </Link> */}
-                        <Link href={"publications/"+d.publication}><a dangerouslySetInnerHTML={{ __html: publicationTitle}}></a></Link>
+                        <Link href={"/publications/"+d.publication}><a dangerouslySetInnerHTML={{ __html: publicationTitle}}></a></Link>
                         
                         {/* <Link href={d.publication}> {papersObject[d.publication].title} </Link> */}
                     </div>

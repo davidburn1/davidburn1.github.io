@@ -25,7 +25,6 @@ export default function Presentations({presentationData}) {
 
 
     <div className="row" key={p.key}>
-        <div scroll-to="selectedKey==p.key"></div>
         <div className="col-sm-3" > 
             <img className="rounded img-fluid img-thumbnail" src={"/images/presentations/"+p.key+".jpg"} alt="{p.title}"/>
         </div>

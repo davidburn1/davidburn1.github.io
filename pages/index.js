@@ -13,7 +13,9 @@ export default function Index() {
 		<div className="row justify-content-md-center align-items-center">
 			<div className="col-md-6 col-lg-4 align-self-end">
 			{/* <Image src="/images/static/portrait.png" alt="David Burn" width={500} height={500}/> */}
-			<img src="/images/static/portrait.png" alt="David Burn" width="500px" height="500px"/>
+			{/* <img src="/images/static/portrait.png" alt="David Burn" width="500px" height="500px"/> */}
+			<img className="img-fluid" src="/images/static/portrait.png"/>
+
 			</div>
 			
 			<div className="col-md-6">	
