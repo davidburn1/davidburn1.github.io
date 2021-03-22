@@ -1,9 +1,21 @@
 import Head from 'next/head'
 import Layout from '../components/Layout';
+import Router from 'next/router'
+// import { Fragment } from 'react'
+
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
 import "../public/styles.css";
+
+
+
+// Notice how we track pageview when route is changed
+// Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
+
+
+
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -17,22 +29,24 @@ export default function MyApp({ Component, pageProps }) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163960416-1"></script>
+    {/* <Fragment>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163960416-1"/>
     <script dangerouslySetInnerHTML={{
       __html: "window.dataLayer = window.dataLayer || []; \
               function gtag(){dataLayer.push(arguments)}\
               gtag('js', new Date());"
     }}/>
+    </Fragment> */}
 
-    <script>
-
-    </script> */}
+ 
 
   </Head>
+  <GoogleAnalytics />
 
     <Layout>
     <Component {...pageProps} />
     </Layout>
+
     </div>
     );
 }
