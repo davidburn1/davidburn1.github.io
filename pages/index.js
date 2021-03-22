@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 // import Image from 'next/image'
 
@@ -7,6 +8,9 @@ export default function Index() {
   return (
 
 <div>
+	<Head>
+    <title>David Burn</title>
+    </Head>
 
 <section>
 	<div className="jumbotron">

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -47,6 +48,10 @@ for (var i = 0; i < papersData.length; i++) {
 
   return (
 <div className="container">
+    <Head>
+    <title>David Burn - {title}</title>
+    </Head>
+
     <br/><br/>
 
     <div className="row" key={p.key}>

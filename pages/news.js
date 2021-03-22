@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 // import Image from 'next/image'
 
@@ -30,6 +31,10 @@ export default function News() {
 return (
 
 <section className="container">
+    <Head>
+    <title>David Burn - news</title>
+    </Head>
+
     <br/><br/>
 
 {newsJson.map(function(d, idx){

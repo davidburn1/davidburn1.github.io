@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import parseLatex from '../../components/Latex';
 
@@ -16,6 +17,9 @@ export default function Presentations({presentationData}) {
 
 
 <section className="container">
+    <Head>
+    <title>David Burn - presentations</title>
+    </Head>
 
     <br/><br/>
 

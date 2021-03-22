@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import { promises as fs } from 'fs'
 import path from 'path'
@@ -60,6 +61,10 @@ const Presentation = ({presentationData}) => {
 
   return (
 <div className="container">
+    <Head>
+    <title>David Burn - {title}</title>
+    </Head>
+
     <br/><br/>
 
     <div className="row" key={p.key}>
