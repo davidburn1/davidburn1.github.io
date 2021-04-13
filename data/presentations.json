@@ -1,18 +1,41 @@
 [
-    
-
-
-
-
+ 
 {
+    "key":"Burn_Magnetism_2021", 
+    "title":"Layer resolved dynamics of magnetic multilayers", 
+    "authors":"<u>D.M. Burn</u>, G. van der Laan and T. Hesjedal",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"April 2021"
+},{
+    "key":"Newman_Magnetism_2021", 
+    "title":"Influence of a Mn ‘spy layer’ on the static and dynamic properties of a FePt/NiFe bilayer", 
+    "authors":"<u>D.G. Newman</u>, A. Frisk, D.M. Burn, M. Dąbrowski, G. van der Laan, T. Hesjedal, and R.J. Hicken",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"April 2021"
+},{
+    "key":"Gladczuk_Magnetism_2021", 
+    "title":"Determination of the existence and magnitude of spin-current and exchange coupling in MgO-based magnetic tunnel junctions", 
+    "authors":"<u>Ł. Gladczuk</u>, L. Gladczuk, P. Dluzewski, K. Lasek, P. Aleshkevych, D.M. Burn, G. van der Laan, and T. Hesjedal",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"April 2021"
+},{
+    "key":"Scott_Magnetism_2021", 
+    "title":"Tuneable, Perpendicular Ni, Pt, Ir and Co Synthetic Ferrimagnets", 
+    "authors":"<u>J.N Scott</u>, W.R Hendren, R. Bowman, R,J Hicken, M. Dabrowski, D.M. Burn, A. Frisk, G. van der Laan and A. N’Diaye",
+    "conference":"Magnetism and Magnetic Materials", 
+    "location":"Online", 
+    "date":"April 2021"
+},{
     "key":"Burn_MMM_2020_a", 
     "title":"Magnetization dynamics in topological spin structures revealed by diffractive ferromagnetic resonance (DFMR) INVITED", 
     "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal and G. van der Laan",
     "conference":"Magnetism and Magnetic Materials", 
     "location":"Online", 
     "date":"November 2020"
-},
-{
+},{
     "key":"Burn_MMM_2020_b", 
     "title":"Field and temperature dependence of the skyrmion lattice phase and the appearance of a second helical phase in FeGe", 
     "authors":"<u>D.M. Burn</u>, S.L. Zhang, T. Hesjedal and G. van der Laan",
