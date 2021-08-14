@@ -2,6 +2,16 @@
 
 
 {
+    "key":"Burn_NQM_2021",
+    "title":"Periodically modulated skyrmion strings in Cu$_2$OSeO$_3$",
+    "authors":"D.M. Burn, R. Brearton, K.J. Ran, S.L. Zhang, G. van der Laan, and T. Hesjedal",
+    "journal":"Nature Quantum Materials",
+    "volume":"7",
+    "page":"73",
+    "year":2021,
+    "doi":"10.1038/s41535-021-00373-y",
+    "abstract":"Magnetic skyrmions are vortex-like spin textures, which are usually treated as two-dimensional objects. In their lattice state, they form well-ordered, hexagonal structures, which have been studied in great detail. To obtain a three-dimensional (3D) skyrmion crystal, these planes can be envisaged to be stacked up forming skyrmion strings in the third dimension. Here, we report the observation of a 3D skyrmion phase in Cu2OSeO3 by carrying out reciprocal space mapping in resonant elastic x-ray scattering. We observe regions in the magnetic field-cooling phase diagram in which the skyrmion phase apparently coexists with the conical phase. However, such a coexistence is forbidden due to symmetry arguments. Instead, the skyrmion strings themselves are periodically modulated along their axes, as confirmed by micromagnetic simulations. The periodic modulation is in fact a necessary consequence of the evolution of the skyrmion phase out of the conical state and should therefore be a universal property of skyrmion strings in chiral helimagnets."
+},{
     "key":"Gladczuk_PRB_2021",
     "title":"Spin-current mediated exchange coupling in MgO-based magnetic tunnel junctions",
     "authors":"L. Gladczuk, L. Gladczuk, P. Dluzewski, K. Lasek, P. Aleshkevych, D.M. Burn , G. van der Laan, and T. Hesjedal",

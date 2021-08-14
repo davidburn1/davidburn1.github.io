@@ -1,10 +1,10 @@
 import json
 
-f = open('./data/presentations.json', 'r') 
+f = open('./data/presentations.json', 'r', encoding='utf8') 
 presentations = json.load(f)
 f.close()
 
-f = open('./data/papers.json', 'r') 
+f = open('./data/papers.json', 'r', encoding='utf8') 
 publications = json.load(f)
 f.close()
 
