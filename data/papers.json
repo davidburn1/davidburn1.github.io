@@ -2,6 +2,16 @@
 
 
 {
+    "key":"Dabrowski_NanoLett_2021",
+    "title":"Transition metal synthetic ferrimagnets: tuneable media for all-optical switching driven by nanoscale spin current",
+    "authors":"M. Dabrowski, J.N. Scott, W.R. Hendren, C.M. Forbes, A. Frisk, D.M. Burn , D.G. Newman, C.R.J. Sait, P.S. Keatley, A.T. N’Diaye, T. Hesjedal, G. van der Laan, R.M. Bowman, and R.J. Hicken",
+    "journal":"Nano Letters",
+    "volume":"21",
+    "page":"9210",
+    "year":2021,
+    "doi":"10.1021/acs.nanolett.1c03081",
+    "abstract":"All-optical switching of magnetization has great potential for use in future ultrafast and energy efficient nanoscale magnetic storage devices. So far, research was almost exclusively focused on rare-earth based materials, which limits device tunability and scalability. Here, we show that a perpendicularly magnetized synthetic ferrimagnet composed of two distinct transition metal ferromagnetic layers, Ni3Pt and Co, can exhibit helicity independent magnetization switching. Switching occurs between two equivalent remanent states with antiparallel alignment of the Ni3Pt and Co magnetic moments, and is observable over a broad temperature range. Time-resolved measurements indicate that the switching is driven by a spin-polarized current passing through the sub-nanometer Ir layer. The magnetic properties of this model system may be tuned continuously via sub-nanoscale changes in the constituent layer thicknesses as well as growth conditions, allowing the underlying mechanisms to be elucidated, and paving the way to a new class of data storage devices."
+},{
     "key":"Burn_NQM_2021",
     "title":"Periodically modulated skyrmion strings in Cu$_2$OSeO$_3$",
     "authors":"D.M. Burn, R. Brearton, K.J. Ran, S.L. Zhang, G. van der Laan, and T. Hesjedal",
