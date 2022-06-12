@@ -1,7 +1,31 @@
 [
 
 
+
+
+
+
 {
+    "key":"Kim_NatComms_2022",
+    "title":"Chiral structures of electric polarization vectors quantified by X-ray resonant scattering",
+    "authors":"K.T. Kim, M.R. McCarter, V.A. Stoica, S. Das, C. Klewe, E.P. Donoway, D.M. Burn, P. Shafer, F. Rodolakis, M.A.P. Goncalves, F. Gomez-Ortiz, J. Iniguez, P. Garcia-Fernandez, J. Junquera, S. Susarla, S.W. Lovesey, G. van der Laan, S-Y Park, L.W. Martin, J.W. Freeland, R. Ramesh and D.R. Lee",
+    "journal":"Nature Communications",
+    "volume":"13",
+    "page":"1769",
+    "year":2022,
+    "doi":"10.1038/s41467-022-29359-5",
+    "abstract":"Resonant elastic X-ray scattering (REXS) offers a unique tool to investigate solid-state systems providing spatial knowledge from diffraction combined with electronic information through the enhanced absorption process, allowing the probing of magnetic, charge, spin, and orbital degrees of spatial order together with electronic structure. A new promising application of REXS is to elucidate the chiral structure of electrical polarization emergent in a ferroelectric oxide superlattice in which the polarization vectors in the REXS amplitude are implicitly described through an anisotropic tensor corresponding to the quadrupole moment. Here, we present a detailed theoretical framework and analysis to quantitatively analyze the experimental results of Ti L-edge REXS of a polar vortex array formed in a PbTiO3/SrTiO3 superlattice. Based on this theoretical framework, REXS for polar chiral structures can become a useful tool similar to x-ray resonant magnetic scattering (XRMS), enabling a comprehensive study of both electric and magnetic REXS on the chiral structures."
+},{
+    "key":"Leveille_NatComms_2022",
+    "title":"Ultrafast time-evolution of chiral Néel magnetic domain walls probed by circular dichroism in x-ray resonant magnetic scattering",
+    "authors":"C. Leveillé, E. Burgos-Parra, Y. Sassi, F. Ajejas, V. Chardonnet, E. Pedersoli, F. Capotondi, G. De Ninno, F. Maccherozzi, S. Dhesi, D.M. Burn, G. van der Laan, O. Latcham, A. Shytov, V. Kruglyak, E. Jal, V. Cros, J-Y. Chauleau,  N. Reyren, M. Viret, N. Reyren, and N. Jaouen",
+    "journal":"Nature Communications",
+    "volume":"13",
+    "page":"1412",
+    "year":2022,
+    "doi":"10.1038/s41467-022-28899-0",
+    "abstract":"Non-collinear spin textures in ferromagnetic ultrathin films are attracting a renewed interest fueled by possible fine engineering of several magnetic interactions, notably the interfacial Dzyaloshinskii-Moriya interaction. This allows for the stabilization of complex chiral spin textures such as chiral magnetic domain walls (DWs), spin spirals, and magnetic skyrmions among others. We report here on the behavior of chiral DWs at ultrashort timescale after optical pumping in perpendicularly magnetized asymmetric multilayers. The magnetization dynamics is probed using time-resolved circular dichroism in x-ray resonant magnetic scattering (CD-XRMS). We observe a picosecond transient reduction of the CD-XRMS, which is attributed to the spin current-induced coherent and incoherent torques within the continuously varying spin texture of the DWs. We argue that a specific demagnetization of the inner structure of the DW induces a flow of spins from the interior of the neighboring magnetic domains. We identify this time-varying change of the DW texture shortly after the laser pulse as a distortion of the homochiral Néel shape toward a transient mixed Bloch-Néel-Bloch texture along a direction transverse to the DW"
+},{
     "key":"Dabrowski_NanoLett_2021",
     "title":"Transition metal synthetic ferrimagnets: tuneable media for all-optical switching driven by nanoscale spin current",
     "authors":"M. Dabrowski, J.N. Scott, W.R. Hendren, C.M. Forbes, A. Frisk, D.M. Burn , D.G. Newman, C.R.J. Sait, P.S. Keatley, A.T. N’Diaye, T. Hesjedal, G. van der Laan, R.M. Bowman, and R.J. Hicken",
