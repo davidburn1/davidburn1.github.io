@@ -2,10 +2,17 @@
 
 
 
-
-
-
 {
+    "key":"Burn_PRB_2022",
+    "title":"Spin orbit torque driven magnetization reversal in CoFeTaB/Pt probed by resonant x-ray reflectivity",
+    "authors":"D.M. Burn, R. Fan, O. Inyang, M. Tokac, L. Bouchenoire, A.T. Hindmarch, and P. Steadman",
+    "journal":"Phys. Rev. B",
+    "volume":"106",
+    "page":"094429",
+    "year":2022,
+    "doi":"10.1103/PhysRevB.106.094429",
+    "abstract":"Resonant soft-x-ray reflectivity and vibrating sample magnetometry have been used to characterize field driven and spin orbit torque driven magnetization reversal in a CoFeTaB/Pt bilayer. Reversal of the magnetization occurs either along the applied field direction or perpendicular to the current flow direction. Magnetometry results show that field driven (current driven) coercivities are reduced by application of a current (field) highlighting the roles played by the two external parameters. In the current switching case, it is demonstrated with soft-x-ray hysteresis loops that only the layers near the interface with Pt switch, possibly highlighting the role of proximity effects of the magnetized Pt. We show how magnetization reversal perpendicular to the beam results in hysteresis behavior in the reflected intensity that is dependent on the magnetization but independent of the helicity of the circular polarization of the incident beam"
+},{
     "key":"Kim_NatComms_2022",
     "title":"Chiral structures of electric polarization vectors quantified by X-ray resonant scattering",
     "authors":"K.T. Kim, M.R. McCarter, V.A. Stoica, S. Das, C. Klewe, E.P. Donoway, D.M. Burn, P. Shafer, F. Rodolakis, M.A.P. Goncalves, F. Gomez-Ortiz, J. Iniguez, P. Garcia-Fernandez, J. Junquera, S. Susarla, S.W. Lovesey, G. van der Laan, S-Y Park, L.W. Martin, J.W. Freeland, R. Ramesh and D.R. Lee",
