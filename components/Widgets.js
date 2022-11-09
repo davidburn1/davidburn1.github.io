@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import papersJson from  '../data/papers.json';
 import presentationsJson from  '../data/presentations.json';
+import parseLatex from './Latex';
 
 export async function getStaticProps() {
     return { props: { papersData:papersJson, presentationsData:presentationsJson } } 
@@ -25,6 +26,7 @@ export function RecentPublications() {
             <div className="row">
 
             {recentPapers.map(function(p, idx){
+                const title = parseLatex(p.title);
             return (
                 <div className="col-lg-6" key={p.key}>
                     <div className='row'>
