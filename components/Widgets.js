@@ -32,7 +32,7 @@ export function RecentPublications() {
                             <img className="hidden-xs img-fluid img-thumbnail" src={"/images/papers/"+p.key+".jpg"} alt="{p.title}"/>
                         </div>
                         <div className="col-sm-8">
-                            <p> <b> <Link href={"/publications/"+p.key}>{p.title}</Link> </b></p>
+                            <p> <b> <Link href={"/publications/"+[p.key]}><a dangerouslySetInnerHTML={{ __html: title}}></a></Link> </b></p>
                             <p>{p.authors}</p> 
                             <p> <a href={"https://doi.org/"+p.doi}> <i>{p.journal}</i> <b>{p.volume}</b>, {p.page} ({p.year}) </a></p>
                         </div>
