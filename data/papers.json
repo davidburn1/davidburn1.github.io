@@ -3,10 +3,21 @@
 
 
 
+
 {
     "key":"Burn_PRB_2022_2",
     "title":"Time-resolved measurement of spin excitations in Cu$_2$OSeO$_3$",
     "authors":"D.M. Burn, S.L. Zhang, G. van der Laan, and T. Hesjedal",
+    "journal":"Phys. Rev. B",
+    "volume":"106",
+    "page":"174409",
+    "year":2022,
+    "doi":"10.1103/PhysRevB.106.174409",
+    "abstract":"Magnetic diffraction in combination with x-ray detected ferromagnetic resonance (DFMR) is a powerful technique for performing time-resolved measurements on individual spin textures. Here, we study the ferromagnetic resonance (FMR) modes of both the conical and field-polarized phases in the chiral magnet Cu2OSeO3. Following the identification of the FMR modes at different temperatures using broadband vector network analyzer FMR, we use DFMR on the crystalline (001) Bragg peak to reveal the time-dependent spin configurations of the selected FMR modes. By being able to measure both the amplitude and phase response of the spin system across the resonance, a continuous phase advance (of 180◦) in the conical mode and a phase lag (of 180◦) in the field-polarized mode is found. By performing dynamic measurements in the conical phase as a function of the linear polarization angle of the x rays, i.e., successively probing the dynamics of the moments, we find an inversion of the dynamics along the conical axis upon inverting the applied field direction. By allowing for time-resolved measurements of the phase and amplitude of individual magnetic phases, DFMR opens up new opportunities for obtaining a deeper understanding of the complex dynamics of chiral magnets."
+},{
+    "key":"Burn_PRB_2022_2",
+    "title":"Time-resolved measurement of spin excitations in Cu$_2$OSeO$_3$",
+    "authors":"D.M. Burn, R. Fan, O. Inyang, M. Tokac, L. Bouchenoire, A.T. Hindmarch, and P. Steadman",
     "journal":"Phys. Rev. B",
     "volume":"106",
     "page":"174409",
