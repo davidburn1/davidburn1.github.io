@@ -2,9 +2,27 @@
 
 
 
-
-
 {
+    "key":"Brearton_PRB_2022",
+    "title":"Three-dimensional structure of magnetic skyrmions",
+    "authors":"R. Brearton, D.M. Burn, A.A. Haghighirad, G. van der Laan and T. Hesjedal",
+    "journal":"Phys. Rev. B",
+    "volume":"106",
+    "page":"214404",
+    "year":2022,
+    "doi":"10.1103/PhysRevB.106.214404",
+    "abstract":"Magnetic skyrmions (skyrmions hereafter) are magnetization configurations, whose topological robustness and nanoscale size have led to speculation that they could find use as a next-generation information carrier. Skyrmions have been observed in magnetic multilayer materials that are thin compared to the radius of a skyrmion, and chiral cubic single crystals that can be far larger than any characteristic skyrmion scale. In these single crystals, one would expect that skyrmions could exhibit interesting three-dimensional (3D) characteristics. Here, the symmetry of the micromagnetic free energy is investigated. This symmetry permits a complex 3D modulation of a skyrmion string, which we show to be a requirement of a skyrmion coexisting with the conical state. We discuss the implications of this modulation with respect to Thiele’s equation and interskyrmion interactions. Further to this internal modulation, we study theoretically and show experimentally that the strings themselves must contort towards the surfaces of their confining crystals."
+},{
+    "key":"McCarter_PRL_2022",
+    "title":"Structural chirality of polar skyrmions probed by resonant elastic x-ray scattering",
+    "authors":"M.R. McCarter, K.T. Kim, V.A. Stoica, S. Das, C. Klewe, E.P. Donoway, D.M. Burn, P. Shafer, F. Rodolakis, M.A.P. Gonalves, F. Ǵomez-Ortiz, J. ́I ̃niguez, P. Garcia-Fernandez, J. Junquera, S.W. Lovesey, G. van der Laan, S.Y. Park, J.W. Freeland, L.W. Martin, D. Ryeol Lee, and R. Ramesh",
+    "journal":"Phys. Rev. Lett",
+    "volume":"129",
+    "page":"247601",
+    "year":2022,
+    "doi":"10.1103/PhysRevLett.129.247601",
+    "abstract":"An escalating challenge in condensed-matter research is the characterization of emergent orderparameter nanostructures such as ferroelectric and ferromagnetic skyrmions. Their small length scales coupled with complex, three-dimensional polarization or spin structures makes them demanding to trace out fully. Resonant elastic x-ray scattering (REXS) has emerged as a technique to study chirality in spin textures such as skyrmions and domain walls. It has, however, been used to a considerably lesser extent to study analogous features in ferroelectrics. Here, we present a framework for modeling REXS from an arbitrary arrangement of charge quadrupole moments, which can be applied to nanostructures in materials such as ferroelectrics. With this, we demonstrate how extended reciprocal space scans using REXS with circularly polarized x rays can probe the three-dimensional structure and chirality of polar skyrmions. Measurements, bolstered by quantitative scattering calculations, show that polar skyrmions of mixed chirality coexist, and that REXS allows valuation of relative fractions of right- and left-handed skyrmions. Our quantitative analysis of the structure and chirality of polar skyrmions highlights the capability of REXS for establishing complex topological structures toward future application exploits."
+},{
     "key":"Burn_PRB_2022_2",
     "title":"Time-resolved measurement of spin excitations in Cu$_2$OSeO$_3$",
     "authors":"D.M. Burn, S.L. Zhang, G. van der Laan, and T. Hesjedal",
