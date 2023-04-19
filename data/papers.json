@@ -1,8 +1,16 @@
 [
 
-
-
 {
+    "key":"Burn_Nanotechnology_2023",
+    "title":"Spin pumping through nanocrystalline topological insulators",
+    "authors":"D.M Burn, J-C Lin, R. Fujita, B. Achinuq, J. Bibby, A. Singh, A. Frisk, G. van der Laan and T. Hesjedal",
+    "journal":"Nanotechnology",
+    "volume":"34",
+    "page":"275001",
+    "year":2023,
+    "doi":"10.1088/1361-6528/acc663",
+    "abstract":"The topological surface states (TSSs) in topological insulators (TIs) offer exciting prospects for dissipationless spin transport. Common spin-based devices, such as spin valves, rely on trilayer structures in which a non-magnetic layer is sandwiched between two ferromagnetic (FM) layers. The major disadvantage of using high-quality single-crystalline TI films in this context is that a single pair of spin-momentum locked channels spans across the entire film, meaning that only a very small spin current can be pumped from one FM to the other, along the side walls of the film. On the other hand, using nanocrystalline TI films, in which the grains are large enough to avoid hybridization of the TSSs, will effectively increase the number of spin channels available for spin pumping. Here, we used an element-selective, x-ray based ferromagnetic resonance technique to demonstrate spin pumping from a FM layer at resonance through the TI layer and into the FM spin sink."
+},{
     "key":"Brearton_PRB_2022",
     "title":"Three-dimensional structure of magnetic skyrmions",
     "authors":"R. Brearton, D.M. Burn, A.A. Haghighirad, G. van der Laan and T. Hesjedal",
