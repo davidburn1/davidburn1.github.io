@@ -219,27 +219,12 @@ export default function Index() {
 
 
 
-{/* <section>
-	<div className="container">
-		<br/>
-		<div className="row">
-			<div className="col-lg-6 text-center">
-				<h1> Look out for my work </h1>
-				<p className="lead"> Presented frequently at magnetism conferences, both in the UK and internationally. </p>
-				<button className="btn btn-outline-primary" ui-sref="presentations"> More of my presentations </button>
-			</div>
-			<div className="col-lg-6">
-				<RecentPresentations></RecentPresentations>
-			</div>
-		</div>
-    </div>
-</section> */}
 
 
 
 {/* <br/><hr/><br/> */}
 
-
+{/* 
 <section id="about">
 <div className="container">
 	<h1  className="text-center"> My background</h1>
@@ -289,7 +274,7 @@ export default function Index() {
 	</div>	
 		
 </div>
-</section>
+</section> */}
 
 
 
