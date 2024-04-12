@@ -1,6 +1,17 @@
 [
 
+
 {
+    "key":"Fan_JSR_2024",
+    "title":"Measuring Hysteresis Curves with Polarised Soft X-ray Reflectivity",
+    "authors":"R. Fan, Kiranjot, R. O. M. Aboljadayel, K. Alsaeed, P. Bencok, D.M. Burn, A. T. Hindmarch and P. Steadman",
+    "journal":"J. Sync. Rad.",
+    "volume":"31",
+    "page":"",
+    "year":2024,
+    "doi":"10.1107/S160057752400119X",
+    "abstract":"Calculations and measurements of polarization-dependent soft X-ray scattering intensity are presented during a magnetic hysteresis cycle. It is confirmed that the dependence of the intensity on the magnetic moment can be linear, quadratic or a combination of both, depending on the polarization of the incident X-ray beam and the direction of the magnetic moment. With a linearly polarized beam, the scattered intensity will have a purely quadratic dependence on the magnetic moment when the magnetic moment is parallel to the scattering plane. However, with the magnetic moment perpendicular to the scattering plane, there is also a linear component. This means that, when measuring the hysteresis with linear polarization during a hysteresis cycle, the intensity will be an even function of the applied field when the change in the magnetic moment (and field) is confined within the scattering plane but becomes more complicated when the magnetic moment is out of the scattering plane. Furthermore, with circular polarization, the dependence of the scattered intensity on the moment is a combination of linear and quadratic. With the moment parallel to the scattering plane, the linear component changes with the helicity of the incident beam. Surprisingly, in stark contrast to absorption studies, even when the magnetic moment is perpendicular to the scattering plane there is still a dependence on the moment with a linear component. This linear component is completely independent of the helicity of the beam, meaning that the hysteresis loops will not be inverted with helicity."
+},{
     "key":"Burn_Nanotechnology_2023",
     "title":"Spin pumping through nanocrystalline topological insulators",
     "authors":"D.M Burn, J-C Lin, R. Fujita, B. Achinuq, J. Bibby, A. Singh, A. Frisk, G. van der Laan and T. Hesjedal",
