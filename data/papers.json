@@ -1,13 +1,33 @@
 [
 
-
+    
 {
+    "key":"Newman_JPD_2025",
+    "title":"Influence of an ultrathin Mn 'spy layer' on the static and dynamic magnetic coupling within FePt/NiFe bilayers",
+    "authors":"D. G. Newman, A. Frisk, D. M. Burn, B. Achinuq, E. Heppell, G. J. Bowden, M. Dabrowski, G. van der Laan, T. Hesjedal and R. J. Hicken",
+    "journal":"J. Phys. D: Appl. Phys..",
+    "volume":"58",
+    "page":"045002",
+    "year":2025,
+    "doi":"10.1107/S160057752400119X",
+    "abstract":"We explore whether insertion of an ultrathin Mn 'spy layer' within a magnetic hard/soft bilayer can enable depth-sensitive element-specific measurements of the static and dynamic magnetization, while avoiding significant disruption of the original magnetic state. MgO(110)/FePt(100 A)/NiFe(200 A)/Mn(tMn A)/NiFe(200 A) samples with Mn thicknesses of tMn = 0, 5, and 10 A were fabricated by magnetron sputtering and studied by element-selective x-ray magnetic circular dichroism (XMCD), vector network analyzer ferromagnetic resonance (VNA-FMR), and x-ray detected ferromagnetic resonance (XFMR). For tMn = 5 A, the magnetic reversal properties remain broadly similar to tMn = 0 A. For tMn = 10 A, the two NiFe layers decouple with XMCD hysteresis loops at the Mn edge showing two switching events that suggest the presence of two distinct Mn-containing regions. While the Mn moments within each region have ferromagnetic order, their relative alignment is antiparallel at high field. Analysis of the magnetic data and additional scanning transmission electron microscopy measurements point to the presence of a Mn layer at the lower NiFe/Mn interface, and the formation of a NiFeMn alloy at the upper Mn/NiFe interface. The Mn moments of the former region lie antiparallel to those of the underlying NiFe layer. The VNA-FMR data suggests that for tMn = 5 and 10 A, the interfacial exchange coupling at the FePt/NiFe is suppressed and the in-plane"
+},{
+    "key":"Kiranjot_JJAP_2024",
+    "title":"Using magneto-optical effects in soft x-ray reflectivity to study current driven magnetisation reversal",
+    "authors":"Kiranjot, R. Fan, R. O. M. Aboljadayel, D.M. Burn, K. Alsaeed, A. T. Hindmarch and P. Steadman",
+    "journal":"Jap. J. Appl. Phys..",
+    "volume":"63",
+    "page":"098004",
+    "year":2024,
+    "doi":"10.35848/1347-4065/ad760b",
+    "abstract":"The soft X-ray reflectivity technique is frequently utilized for studying magnetization reversal in thin films due to its elemental and depth sensitivity. The characteristic hysteresis loops measured with this technique are dependent on both the magnetization direction in magnetic materials and the incident soft X-ray polarization. In this note, we have discussed these magneto-optical effects in soft X-ray reflectivity measurements. These effects can be exploited to probe magnetization reversal mechanisms driven by stimuli beyond conventional means of magnetic field. To demonstrate this, we have presented our investigations on current-induced magnetization switching in ferromagnet/heavy metal (FM/HM) heterostructures."
+},{
     "key":"Fan_JSR_2024",
     "title":"Measuring Hysteresis Curves with Polarised Soft X-ray Reflectivity",
     "authors":"R. Fan, Kiranjot, R. O. M. Aboljadayel, K. Alsaeed, P. Bencok, D.M. Burn, A. T. Hindmarch and P. Steadman",
     "journal":"J. Sync. Rad.",
     "volume":"31",
-    "page":"",
+    "page":"493",
     "year":2024,
     "doi":"10.1107/S160057752400119X",
     "abstract":"Calculations and measurements of polarization-dependent soft X-ray scattering intensity are presented during a magnetic hysteresis cycle. It is confirmed that the dependence of the intensity on the magnetic moment can be linear, quadratic or a combination of both, depending on the polarization of the incident X-ray beam and the direction of the magnetic moment. With a linearly polarized beam, the scattered intensity will have a purely quadratic dependence on the magnetic moment when the magnetic moment is parallel to the scattering plane. However, with the magnetic moment perpendicular to the scattering plane, there is also a linear component. This means that, when measuring the hysteresis with linear polarization during a hysteresis cycle, the intensity will be an even function of the applied field when the change in the magnetic moment (and field) is confined within the scattering plane but becomes more complicated when the magnetic moment is out of the scattering plane. Furthermore, with circular polarization, the dependence of the scattered intensity on the moment is a combination of linear and quadratic. With the moment parallel to the scattering plane, the linear component changes with the helicity of the incident beam. Surprisingly, in stark contrast to absorption studies, even when the magnetic moment is perpendicular to the scattering plane there is still a dependence on the moment with a linear component. This linear component is completely independent of the helicity of the beam, meaning that the hysteresis loops will not be inverted with helicity."
